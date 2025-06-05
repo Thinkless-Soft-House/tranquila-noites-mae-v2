@@ -19,17 +19,17 @@ const Index = () => {
 
     const script = document.createElement("script");
     script.id = "cartpanda-script";
-    script.type = "text/javascript";
+    script.type = "plain/javascript";
     script.src = "https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/cpsales.js";
     script.async = true;
     document.body.appendChild(script);
 
     // Esconde o widget Cartpanda se for português
     let hideInterval = null;
-    if (i18n.language === "pt") {
+    if (i18n.language === "pt" || i18n.language.startsWith("pt-")) {
       hideInterval = setInterval(() => {
         document.querySelectorAll('[id^="cartpanda"], .cartpanda-secure-order').forEach(el => {
-          (el as HTMLElement).style.display = "none";
+          (el as HTMLElement).style.setProperty("display", "none", "important");
         });
       }, 500);
     }
