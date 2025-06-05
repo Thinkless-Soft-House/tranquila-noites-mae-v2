@@ -10,7 +10,7 @@
     "titleLine4": "solution",
     "subtitlePart1": "Discover the method that has already transformed the lives of",
     "subtitlePart2": "thousands of mothers",
-    "subtitlePart3": "and finally have the peaceful nights you deserve.",
+    "subtitlePart3": " and finally have the peaceful nights you deserve.",
     "ctaButton": "✨ I want my motherhood to be lighter",
     "ctaSubtext": "100% secure purchase • Immediate access",
     "socialProofAlt": "Customer",
@@ -133,23 +133,23 @@
     "titleLine2": "transformation",
     "subtitle": "See how other mothers went from total exhaustion to nights of peace and tranquility",
     "testimonial1": {
-      "name": "Maria Silva",
-      "city": "São Paulo, SP",
-      "imageAlt": "Maria Silva",
+      "name": "Emily Johnson",
+      "city": "Austin, TX",
+      "imageAlt": "Emily Johnson",
       "text": "In just 3 days my daughter was already sleeping through the night. I couldn't believe it would be so fast! The method is truly amazing.",
       "highlight": "3 days for results"
     },
     "testimonial2": {
-      "name": "Ana Costa",
-      "city": "Rio de Janeiro, RJ",
-      "imageAlt": "Ana Costa",
+      "name": "Jessica Smith",
+      "city": "Chicago, IL",
+      "imageAlt": "Jessica Smith",
       "text": "I finally got to sleep! The guide saved my mental health and my marriage. I'm renewed and happy again.",
       "highlight": "Complete transformation"
     },
     "testimonial3": {
-      "name": "Carla Santos",
-      "city": "Belo Horizonte, MG",
-      "imageAlt": "Carla Santos",
+      "name": "Ashley Williams",
+      "city": "San Diego, CA",
+      "imageAlt": "Ashley Williams",
       "text": "I was at the limit of exhaustion. This guide gave me hope and real results. My baby sleeps 8 hours straight!",
       "highlight": "8 hours of sleep"
     },
@@ -227,8 +227,8 @@
     "subtitlePart2": "Calm Mom",
     "subtitlePart3": ", you can have peaceful nights and lighter days. Thousands of mothers have already transformed their lives - now it's your turn.",
     "imageAlt": "Calm Mom - Digital Guide CTA",
-    "priceOld": "From $97 to",
-    "priceNew": "$37",
+    "priceOld": "From $35 to",
+    "priceNew": "$13.97",
     "trustIndicator1": "7-day guarantee",
     "trustIndicator2": "Immediate access",
     "trustIndicator3": "5,000+ families",
@@ -243,8 +243,9 @@
     "ctaSubtext1": "🔒 100% secure purchase • ✅ 7-day guarantee",
     "ctaSubtext2": "Payment processed with SSL security",
     "urgencyTitle": "Last hours of the promotion!",
-    "urgencyText": "The promotional price of $37 is valid only today. Tomorrow it returns to $97.",
+    "urgencyText": "The promotional price of $13.97 is valid only today. Tomorrow it returns to $35.",
     "finalMessageTitle": "💜 A rested mother is a better mother",
-    "finalMessageText": "You deserve peaceful nights, lighter days, and the confidence that you are taking care of your baby in the best possible way. Give this gift to yourself and your family."
+    "finalMessageText": "You deserve peaceful nights, lighter days, and the confidence that you are taking care of your baby in the best possible way. Give this gift to yourself and your family.",
+    "checkoutLink": "https://example.com/checkout"
   }
 }

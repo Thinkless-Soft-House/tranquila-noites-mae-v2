@@ -10,7 +10,7 @@
     "titleLine4": "solución",
     "subtitlePart1": "Descubre el método que ya ha transformado la vida de",
     "subtitlePart2": "miles de madres",
-    "subtitlePart3": "y finalmente ten las noches tranquilas que mereces.",
+    "subtitlePart3": " y finalmente ten las noches tranquilas que mereces.",
     "ctaButton": "✨ Quiero que mi maternidad sea más ligera",
     "ctaSubtext": "Compra 100% segura • Acceso inmediato",
     "socialProofAlt": "Cliente",
@@ -133,23 +133,23 @@
     "titleLine2": "transformación",
     "subtitle": "Mira cómo otras madres pasaron del agotamiento total a noches de paz y tranquilidad",
     "testimonial1": {
-      "name": "María Silva",
-      "city": "São Paulo, SP",
-      "imageAlt": "María Silva",
+      "name": "Lucía García",
+      "city": "Madrid, Comunidad de Madrid",
+      "imageAlt": "Lucía García",
       "text": "En solo 3 días mi hija ya dormía toda la noche. ¡No creí que sería tan rápido! El método es realmente increíble.",
       "highlight": "3 días para resultados"
     },
     "testimonial2": {
-      "name": "Ana Costa",
-      "city": "Río de Janeiro, RJ",
-      "imageAlt": "Ana Costa",
+      "name": "Carmen López",
+      "city": "Valencia, Comunidad Valenciana",
+      "imageAlt": "Carmen López",
       "text": "¡Finalmente pude dormir! La guía salvó mi salud mental y mi matrimonio. Estoy renovada y feliz nuevamente.",
       "highlight": "Transformación completa"
     },
     "testimonial3": {
-      "name": "Carla Santos",
-      "city": "Belo Horizonte, MG",
-      "imageAlt": "Carla Santos",
+      "name": "María Fernández",
+      "city": "Sevilla, Andalucía",
+      "imageAlt": "María Fernández",
       "text": "Estaba al límite del agotamiento. Esta guía me dio esperanza y resultados reales. ¡Mi bebé duerme 8 horas seguidas!",
       "highlight": "8 horas de sueño"
     },
@@ -227,8 +227,8 @@
     "subtitlePart2": "Mamá Tranquila",
     "subtitlePart3": ", puedes tener noches de paz y días más ligeros. Miles de madres ya han transformado sus vidas - ahora es tu turno.",
     "imageAlt": "Mamá Tranquila - Guía Digital CTA",
-    "priceOld": "De $97 por",
-    "priceNew": "$37",
+    "priceOld": "De $35 por",
+    "priceNew": "$13,97",
     "trustIndicator1": "7 días de garantía",
     "trustIndicator2": "Acceso inmediato",
     "trustIndicator3": "5.000+ familias",
@@ -243,8 +243,9 @@
     "ctaSubtext1": "🔒 Compra 100% segura • ✅ Garantía de 7 días",
     "ctaSubtext2": "Pago procesado con seguridad SSL",
     "urgencyTitle": "¡Últimas horas de la promoción!",
-    "urgencyText": "El precio promocional de $37 es válido solo hoy. Mañana vuelve a $97.",
+    "urgencyText": "El precio promocional de $13,97 es válido solo hoy. Mañana vuelve a $35.",
     "finalMessageTitle": "💜 Una madre descansada es una mejor madre",
-    "finalMessageText": "Mereces noches tranquilas, días más ligeros y la confianza de que estás cuidando a tu bebé de la mejor manera posible. Date este regalo a ti y a tu familia."
+    "finalMessageText": "Mereces noches tranquilas, días más ligeros y la confianza de que estás cuidando a tu bebé de la mejor manera posible. Date este regalo a ti y a tu familia.",
+    "checkoutLink": "https://ejemplo.es/checkout"
   }
 }

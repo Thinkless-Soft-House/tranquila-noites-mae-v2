@@ -5,7 +5,7 @@ const TestimonialsFr = () => {
     {
       name: "Marie Dubois",
       city: "Paris, Île-de-France",
-      image: "/lovable-uploads/07734f1e-a5f0-4aba-971a-2dc3247575f4.png",
+      image: "/lovable-uploads/mae3.webp.png",
       text: "En seulement 3 jours, ma fille dormait toute la nuit. Je n'y croyais pas ! La méthode est vraiment incroyable.",
       rating: 5,
       highlight: "3 jours pour des résultats"
@@ -13,7 +13,7 @@ const TestimonialsFr = () => {
     {
       name: "Anne Leroy",
       city: "Lyon, Auvergne-Rhône-Alpes",
-      image: "/lovable-uploads/3d25edc9-75e1-4ebe-a4aa-53ac97b5ae70.png",
+      image: "/lovable-uploads/mae1.webp",
       text: "J'ai enfin pu dormir ! Le guide a sauvé ma santé mentale et mon couple. Je me sens à nouveau heureuse et pleine d'énergie.",
       rating: 5,
       highlight: "Transformation complète"
@@ -21,7 +21,7 @@ const TestimonialsFr = () => {
     {
       name: "Caroline Martin",
       city: "Marseille, Provence-Alpes-Côte d'Azur",
-      image: "/lovable-uploads/5da3d5d9-b257-4191-a403-37731032c15e.png",
+      image: "/lovable-uploads/mae2.webp.png",
       text: "J'étais au bout du rouleau. Ce guide m'a redonné espoir et des résultats concrets. Mon bébé dort 8 heures d'affilée !",
       rating: 5,
       highlight: "8 heures de sommeil"

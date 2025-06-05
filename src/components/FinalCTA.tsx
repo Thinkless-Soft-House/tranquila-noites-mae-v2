@@ -3,8 +3,11 @@ import { Shield, Clock, Star, ArrowRight, Gift } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const FinalCTA = () => {
-  const { t } = useTranslation();
-  const paymentLink = "https://pay.kirvano.com/723dbad7-ba44-4223-acc9-a874956fc05b"; // Keep link static
+  const { t, i18n } = useTranslation();
+  const checkoutLink = t("finalCta.checkoutLink");
+  // Seleciona o mockup de acordo com o idioma
+  const lang = i18n.language === "en-GB" ? "en-GB" : i18n.language.split("-")[0];
+  const mockupSrc = `/lovable-uploads/mockup_${lang}.webp`;
   const ctaPoints = t("finalCta.ctaPoints", { returnObjects: true }) as string[];
 
   return (
@@ -41,8 +44,8 @@ const FinalCTA = () => {
               <div className="relative mb-8">
                 <div className="absolute inset-0 bg-white rounded-3xl blur-2xl opacity-20 transform rotate-6"></div>
                 <img 
-                  src="/lovable-uploads/80510ec7-7bcf-44d8-8b82-0935e173eea4.png" 
-                  alt={t("finalCta.imageAlt")} 
+                  src={mockupSrc}
+                  alt={t("finalCta.imageAlt")}
                   className="relative w-full max-w-sm mx-auto rounded-2xl shadow-2xl"
                 />
                 
@@ -96,7 +99,7 @@ const FinalCTA = () => {
                   className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-6 sm:px-10 py-8 text-xl font-bold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full group mx-auto flex items-center justify-center gap-2 whitespace-normal text-center"
                   asChild
                 >
-                  <a href={paymentLink}>
+                  <a href={checkoutLink} target="_blank" rel="noopener noreferrer">
                     <span className="flex items-center justify-center gap-2 w-full break-words whitespace-normal">
                       {/* Moon emoji might need adjustment or removal for i18n */}
                       <span role="img" aria-label="lua">🌙</span> 

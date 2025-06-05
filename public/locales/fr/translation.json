@@ -1,250 +1,251 @@
 {
   "hero": {
-    "logoAlt": "Mamãe Tranquila Logo",
-    "trustIndicator1": "+5.000 mães satisfeitas",
-    "trustIndicator2": "Garantia de 7 dias",
-    "trustIndicator3": "Aprovado por especialistas",
-    "titleLine1": "Cansada de",
-    "titleLine2": "noites sem dormir?",
-    "titleLine3": "Nós temos a",
-    "titleLine4": "solução",
-    "subtitlePart1": "Descubra o método que já transformou a vida de",
-    "subtitlePart2": "milhares de mães",
-    "subtitlePart3": "e finalmente tenha as noites tranquilas que você merece.",
-    "ctaButton": "✨ Quero minha maternidade mais leve",
-    "ctaSubtext": "Compra 100% segura • Acesso imediato",
+    "logoAlt": "Maman Zen Logo",
+    "trustIndicator1": "+5 000 mamans satisfaites",
+    "trustIndicator2": "Garantie 7 jours",
+    "trustIndicator3": "Recommandé par des experts",
+    "titleLine1": "Fatiguée de",
+    "titleLine2": "nuits sans sommeil ?",
+    "titleLine3": "Nous avons la",
+    "titleLine4": "solution",
+    "subtitlePart1": "Découvrez la méthode qui a déjà transformé la vie de",
+    "subtitlePart2": "milliers de mamans",
+    "subtitlePart3": " et profitez enfin des nuits paisibles que vous méritez.",
+    "ctaButton": "✨ Je veux une maternité plus sereine",
+    "ctaSubtext": "Achat 100% sécurisé • Accès immédiat",
     "socialProofAlt": "Cliente",
-    "socialProofText": "Mais de 5.000 avaliações 5 estrelas",
-    "productImageAlt": "Mamãe Tranquila - Guia Digital",
+    "socialProofText": "Plus de 5 000 avis 5 étoiles",
+    "productImageAlt": "Maman Zen – Guide Digital",
     "badge1Value": "100%",
     "badge1Label": "Digital",
     "badge2Value": "7",
-    "badge2Label": "Dias"
+    "badge2Label": "Jours"
   },
   "painPoints": {
-    "title": "Você se reconhece nesta situação?",
-    "subtitle": "Milhares de mães passam por isso todos os dias. Mas há uma luz no fim do túnel.",
-    "beforeTitle": "😰 Antes",
-    "beforeSubtitle": "O que você está vivendo agora",
+    "title": "Vous vous reconnaissez dans cette situation ?",
+    "subtitle": "Des milliers de mamans vivent cela chaque jour. Mais il y a de l'espoir.",
+    "beforeTitle": "😰 Avant",
+    "beforeSubtitle": "Ce que vous vivez actuellement",
     "problems": [
-      "Dorme mal todas as noites e acorda várias vezes",
-      "Se sente esgotada física e emocionalmente",
-      "Tem medo de errar como mãe e prejudicar o bebê",
-      "Chora escondida de cansaço e exaustão",
-      "Não consegue ter um momento de descanso",
-      "Sente que perdeu sua identidade e liberdade"
+      "Vous dormez mal chaque nuit et vous vous réveillez plusieurs fois",
+      "Vous vous sentez épuisée physiquement et émotionnellement",
+      "Vous avez peur de faire des erreurs en tant que maman et de nuire à votre bébé",
+      "Vous pleurez en cachette à cause de la fatigue et de l'épuisement",
+      "Vous n'arrivez pas à trouver un moment de repos",
+      "Vous avez l'impression d'avoir perdu votre identité et votre liberté"
     ],
-    "centerImageAlt": "Mãe cansada com bebê",
-    "centerBadge1": "Situação atual",
-    "centerBadge2": "Sua nova vida",
-    "afterTitle": "✨ Depois",
-    "afterSubtitle": "Como sua vida vai ser",
+    "centerImageAlt": "Maman épuisée avec bébé",
+    "centerBadge1": "Situation actuelle",
+    "centerBadge2": "Votre nouvelle vie",
+    "afterTitle": "✨ Après",
+    "afterSubtitle": "À quoi ressemblera votre vie",
     "solutions": [
-      "Noites tranquilas com 6-8 horas de sono",
-      "Energia renovada para aproveitar a maternidade",
-      "Confiança total nas suas habilidades maternas",
-      "Momentos de paz e alegria com seu bebê",
-      "Tempo para cuidar de si mesma",
-      "Equilíbrio entre ser mãe e ser mulher"
+      "Nuits paisibles avec 6 à 8 heures de sommeil",
+      "Énergie retrouvée pour profiter de la maternité",
+      "Confiance totale en vos capacités de maman",
+      "Moments de paix et de joie avec votre bébé",
+      "Du temps pour prendre soin de vous",
+      "Équilibre entre être maman et femme"
     ],
-    "transformationTitle": "🎯 A transformação está ao seu alcance",
-    "transformationTextPart1": "Com o método",
-    "transformationTextPart2": "Mamãe Tranquila",
-    "transformationTextPart3": ", você vai da exaustão total para noites de paz em apenas 7 dias."
+    "transformationTitle": "🎯 La transformation est à portée de main",
+    "transformationTextPart1": "Avec la méthode",
+    "transformationTextPart2": "Maman Zen",
+    "transformationTextPart3": ", passez de l'épuisement total à des nuits paisibles en seulement 7 jours."
   },
   "productIntro": {
-    "badge": "Método #1 em sono infantil",
-    "titleLine1": "Mais que um guia,",
-    "titleLine2": "uma transformação completa",
-    "subtitlePart1": "O",
-    "subtitlePart2": "Mamãe Tranquila",
-    "subtitlePart3": "é o resultado de anos de pesquisa e experiência real com milhares de famílias. Um método que realmente funciona.",
+    "badge": "Méthode n°1 pour le sommeil des bébés",
+    "titleLine1": "Plus qu'un guide,",
+    "titleLine2": "une transformation complète",
+    "subtitlePart1": "La",
+    "subtitlePart2": "Maman Zen",
+    "subtitlePart3": "est le fruit d'années de recherche et d'expérience réelle avec des milliers de familles. Une méthode qui fonctionne vraiment.",
     "features": [
       {
-        "title": "Técnicas validadas cientificamente",
-        "description": "Métodos aprovados por pediatras e especialistas em sono infantil"
+        "title": "Techniques validées scientifiquement",
+        "description": "Méthodes recommandées par des pédiatres et des experts du sommeil"
       },
       {
-        "title": "Checklists práticos",
-        "description": "Guias passo a passo para implementar cada técnica com facilidade"
+        "title": "Check-lists pratiques",
+        "description": "Guides étape par étape pour appliquer chaque technique facilement"
       },
       {
-        "title": "Depoimentos reais",
-        "description": "Histórias inspiradoras de mães que transformaram suas noites"
+        "title": "Témoignages authentiques",
+        "description": "Histoires inspirantes de mamans qui ont transformé leurs nuits"
       },
       {
-        "title": "Plano de 7 dias",
-        "description": "Cronograma estruturado para resultados rápidos e duradouros"
+        "title": "Plan sur 7 jours",
+        "description": "Programme structuré pour des résultats rapides et durables"
       }
     ],
-    "imageAlt": "Mamãe Tranquila - Guia Digital Detalhe",
-    "guideContentTitle": "O que você encontra dentro do guia:",
+    "imageAlt": "Maman Zen – Détail du Guide Digital",
+    "guideContentTitle": "Ce que vous trouverez dans le guide :",
     "guideContentItems": [
-      "7 técnicas comprovadas para fazer o bebê dormir rapidamente",
-      "Como criar o ambiente perfeito para o sono",
-      "Rotinas que realmente funcionam para cada idade",
-      "O que fazer quando nada parece funcionar",
-      "Técnicas de auto-cuidado para a mãe exausta",
-      "Plano de implementação dia a dia"
+      "7 techniques éprouvées pour endormir rapidement votre bébé",
+      "Comment créer l'environnement parfait pour le sommeil",
+      "Des routines qui fonctionnent vraiment à chaque âge",
+      "Que faire quand rien ne semble marcher",
+      "Techniques d'auto-soin pour les mamans épuisées",
+      "Plan d'action jour par jour"
     ],
-    "bonusTitle": "Bônus Exclusivo",
-    "bonusTextPart1": "Acesso ao grupo privado",
-    "bonusTextPart2": "com outras mães que estão passando pela mesma jornada. Suporte, dicas e muito carinho! 💜",
-    "ctaButton": "🎯 Quero transformar minhas noites"
+    "bonusTitle": "Bonus exclusif",
+    "bonusTextPart1": "Accès au groupe privé",
+    "bonusTextPart2": "avec d'autres mamans qui vivent la même expérience. Soutien, conseils et beaucoup de bienveillance ! 💜",
+    "ctaButton": "🎯 Je veux transformer mes nuits"
   },
   "howItWorks": {
-    "badge": "Método testado e aprovado",
-    "titleLine1": "Como funciona o método",
-    "titleLine2": "Mamãe Tranquila",
-    "subtitle": "Um plano estruturado de 7 dias para transformar completamente as noites da sua família",
+    "badge": "Méthode testée et approuvée",
+    "titleLine1": "Comment fonctionne la méthode",
+    "titleLine2": "Maman Zen",
+    "subtitle": "Un plan structuré sur 7 jours pour transformer complètement les nuits de votre famille",
     "steps": [
       {
-        "title": "Diagnóstico inicial",
-        "description": "Identifique o perfil do seu bebê e as principais causas dos problemas de sono",
-        "time": "Dia 1"
+        "title": "Diagnostic initial",
+        "description": "Identifiez le profil de votre bébé et les principales causes des troubles du sommeil",
+        "time": "Jour 1"
       },
       {
-        "title": "Preparação do ambiente",
-        "description": "Configure o quarto e crie a atmosfera perfeita para noites tranquilas",
-        "time": "Dias 2-3"
+        "title": "Préparation de l'environnement",
+        "description": "Aménagez la chambre et créez l'atmosphère parfaite pour des nuits paisibles",
+        "time": "Jours 2-3"
       },
       {
-        "title": "Implementação da rotina",
-        "description": "Estabeleça horários e rituais que funcionam para sua família",
-        "time": "Dias 4-5"
+        "title": "Mise en place de la routine",
+        "description": "Établissez des horaires et des rituels adaptés à votre famille",
+        "time": "Jours 4-5"
       },
       {
-        "title": "Ajustes e resultados",
-        "description": "Faça os últimos ajustes e celebre suas primeiras noites de paz",
-        "time": "Dias 6-7"
+        "title": "Ajustements et résultats",
+        "description": "Effectuez les derniers ajustements et célébrez vos premières nuits paisibles",
+        "time": "Jours 6-7"
       }
     ],
-    "resultsTitle": "🎉 Resultados que você pode esperar:",
+    "resultsTitle": "🎉 Résultats que vous pouvez attendre :",
     "result1Value": "85%",
-    "result1Text": "das mães veem melhora já na primeira semana",
+    "result1Text": "des mamans constatent une amélioration dès la première semaine",
     "result2Value": "6-8h",
-    "result2Text": "de sono ininterrupto por noite",
+    "result2Text": "de sommeil ininterrompu par nuit",
     "result3Value": "97%",
-    "result3Text": "recomendariam o método para outras mães"
+    "result3Text": "recommanderaient la méthode à d'autres mamans"
   },
   "testimonials": {
-    "badge": "+5.000 mães transformadas",
-    "titleLine1": "Histórias reais de",
-    "titleLine2": "transformação",
-    "subtitle": "Veja como outras mães saíram da exaustão total para noites de paz e tranquilidade",
+    "badge": "+5 000 mamans transformées",
+    "titleLine1": "Histoires vraies de",
+    "titleLine2": "transformation",
+    "subtitle": "Découvrez comment d'autres mamans sont passées de l'épuisement total à des nuits paisibles et sereines",
     "testimonial1": {
-      "name": "Maria Silva",
-      "city": "São Paulo, SP",
-      "imageAlt": "Maria Silva",
-      "text": "Em apenas 3 dias minha filha já dormia a noite toda. Não acreditei que seria tão rápido! O método é realmente incrível.",
-      "highlight": "3 dias para resultados"
+      "name": "Camille Dubois",
+      "city": "Lyon, Auvergne-Rhône-Alpes",
+      "imageAlt": "Camille Dubois",
+      "text": "En seulement 3 jours, ma fille dormait déjà toute la nuit. Je n'aurais jamais cru que ce serait si rapide ! La méthode est vraiment incroyable.",
+      "highlight": "3 jours pour des résultats"
     },
     "testimonial2": {
-      "name": "Ana Costa",
-      "city": "Rio de Janeiro, RJ",
-      "imageAlt": "Ana Costa",
-      "text": "Finalmente consegui dormir! O guia salvou minha sanidade mental e meu casamento. Estou renovada e feliz novamente.",
-      "highlight": "Transformação completa"
+      "name": "Sophie Martin",
+      "city": "Paris, Île-de-France",
+      "imageAlt": "Sophie Martin",
+      "text": "J'ai enfin pu dormir ! Le guide a sauvé ma santé mentale et mon couple. Je me sens à nouveau reposée et heureuse.",
+      "highlight": "Transformation complète"
     },
     "testimonial3": {
-      "name": "Carla Santos",
-      "city": "Belo Horizonte, MG",
-      "imageAlt": "Carla Santos",
-      "text": "Estava no limite do esgotamento. Este guia me deu esperança e resultados reais. Minha bebê dorme 8 horas seguidas!",
-      "highlight": "8 horas de sono"
+      "name": "Julie Bernard",
+      "city": "Marseille, Provence-Alpes-Côte d'Azur",
+      "imageAlt": "Julie Bernard",
+      "text": "J'étais au bout du rouleau. Ce guide m'a redonné espoir et des résultats concrets. Mon bébé dort 8 heures d'affilée !",
+      "highlight": "8 heures de sommeil"
     },
-    "verifiedBadge": "Depoimento verificado",
-    "statsTitle": "Números que comprovam nossa eficácia",
-    "stat1Value": "5.247",
-    "stat1Label": "Mães atendidas",
+    "verifiedBadge": "Avis vérifié",
+    "statsTitle": "Des chiffres qui prouvent notre efficacité",
+    "stat1Value": "5 247",
+    "stat1Label": "Mamans accompagnées",
     "stat2Value": "97%",
-    "stat2Label": "Taxa de sucesso",
-    "stat3Value": "3.2",
-    "stat3Label": "Dias para ver resultados",
-    "stat4Value": "4.9",
-    "stat4Label": "Avaliação média (⭐⭐⭐⭐⭐)"
+    "stat2Label": "Taux de réussite",
+    "stat3Value": "3,2",
+    "stat3Label": "Jours pour voir les résultats",
+    "stat4Value": "4,9",
+    "stat4Label": "Note moyenne (⭐⭐⭐⭐⭐)"
   },
   "guarantee": {
-    "badge": "100% Livre de risco",
-    "titleLine1": "Garantia Total de",
-    "titleLine2": "7 Dias",
-    "detailsTitle": "Risco Zero",
-    "detailsSubtitle": "Sua satisfação garantida",
-    "point1": "7 dias completos para testar todo o conteúdo",
-    "point2": "Reembolso integral sem perguntas ou burocracia",
-    "point3": "Suporte dedicado durante todo o período",
-    "howItWorksTitle": "💡 Como funciona nossa garantia:",
-    "step1": "Adquira o guia hoje",
-    "step2": "Teste por 7 dias completos",
-    "step3": "Não gostou? Devolvemos 100% do valor",
-    "imageAlt": "Garantia de 7 dias",
-    "ctaTitle": "Sua tranquilidade é nossa prioridade",
-    "ctaText": "Estamos tão confiantes nos resultados que oferecemos essa garantia incondicional. Você não tem nada a perder, apenas noites de paz a ganhar.",
-    "offerTitle": "Oferta por tempo limitado",
-    "offerText": "Aproveite nossa garantia estendida e comece sua transformação hoje mesmo",
-    "ctaButton": "🛡️ Quero começar com segurança total"
+    "badge": "100% sans risque",
+    "titleLine1": "Garantie totale",
+    "titleLine2": "7 jours",
+    "detailsTitle": "Zéro risque",
+    "detailsSubtitle": "Votre satisfaction garantie",
+    "point1": "7 jours complets pour tester tout le contenu",
+    "point2": "Remboursement intégral sans question ni paperasse",
+    "point3": "Support dédié pendant toute la période",
+    "howItWorksTitle": "💡 Comment fonctionne notre garantie :",
+    "step1": "Commandez le guide aujourd'hui",
+    "step2": "Testez-le pendant 7 jours",
+    "step3": "Pas satisfaite ? Nous remboursons 100% du montant",
+    "imageAlt": "Garantie 7 jours",
+    "ctaTitle": "Votre sérénité est notre priorité",
+    "ctaText": "Nous sommes tellement convaincus des résultats que nous offrons cette garantie inconditionnelle. Vous n'avez rien à perdre, seulement des nuits paisibles à gagner.",
+    "offerTitle": "Offre à durée limitée",
+    "offerText": "Profitez de notre garantie étendue et commencez votre transformation dès aujourd'hui",
+    "ctaButton": "🛡️ Je veux commencer en toute sécurité"
   },
   "faq": {
-    "badge": "Tire suas dúvidas",
-    "titleLine1": "Perguntas",
-    "titleLine2": "Frequentes",
-    "subtitle": "Respondemos as principais dúvidas que outras mães tiveram",
+    "badge": "Vos questions répondues",
+    "titleLine1": "Questions",
+    "titleLine2": "fréquentes",
+    "subtitle": "Nous répondons aux principales questions que d'autres mamans se sont posées",
     "faqs": [
       {
-        "question": "Para qual idade do bebê o método é indicado?",
-        "answer": "O método Mamãe Tranquila é eficaz para bebês de 0 a 24 meses. Temos técnicas específicas adaptadas para cada faixa etária: recém-nascidos (0-3 meses), bebês (4-12 meses) e crianças pequenas (13-24 meses). Cada fase tem suas particularidades e o guia aborda todas elas detalhadamente."
+        "question": "Pour quel âge de bébé la méthode est-elle recommandée ?",
+        "answer": "La méthode Maman Zen est efficace pour les bébés de 0 à 24 mois. Nous avons des techniques spécifiques adaptées à chaque tranche d'âge : nouveau-nés (0-3 mois), bébés (4-12 mois) et tout-petits (13-24 mois). Chaque phase a ses particularités et le guide les aborde toutes en détail."
       },
       {
-        "question": "Funciona mesmo com bebês muito agitados?",
-        "answer": "Sim! Trabalhamos especialmente com bebês considerados 'difíceis' ou com alta demanda. O guia inclui técnicas específicas para bebês hiperativos, com cólicas ou que têm dificuldades para relaxar. Muitas mães relataram sucesso extraordinário justamente com bebês que pareciam impossíveis de acalmar."
+        "question": "Est-ce que ça marche aussi avec des bébés très agités ?",
+        "answer": "Oui ! Nous travaillons particulièrement avec des bébés dits 'difficiles' ou très actifs. Le guide contient des techniques spécifiques pour les bébés hyperactifs, ceux qui ont des coliques ou qui ont du mal à se détendre. De nombreuses mamans témoignent d'un grand succès même avec des bébés apparemment inconsolables."
       },
       {
-        "question": "Como vou receber o material?",
-        "answer": "Imediatamente após a confirmação do pagamento, você receberá por email o link para download do guia completo em PDF. O material fica disponível para acesso ilimitado, e você pode baixar quantas vezes quiser. Também enviamos por WhatsApp para garantir que você receba."
+        "question": "Comment vais-je recevoir le matériel ?",
+        "answer": "Immédiatement après la confirmation du paiement, vous recevrez par e-mail le lien pour télécharger le guide complet en PDF. Le matériel est disponible en accès illimité et vous pouvez le télécharger autant de fois que vous le souhaitez. Nous l'envoyons également par WhatsApp pour garantir la réception."
       },
       {
-        "question": "Posso acessar pelo celular?",
-        "answer": "Absolutamente! O guia foi otimizado para leitura em celular, tablet, computador ou pode ser impresso. Sabemos que mães precisam de praticidade, então você pode consultar as técnicas a qualquer hora, em qualquer lugar, mesmo durante as madrugadas."
+        "question": "Puis-je y accéder sur mon téléphone ?",
+        "answer": "Absolument ! Le guide est optimisé pour une lecture sur téléphone, tablette, ordinateur ou peut être imprimé. Nous savons que les mamans ont besoin de praticité, vous pouvez donc consulter les techniques à tout moment, où que vous soyez, même au milieu de la nuit."
       },
       {
-        "question": "E se eu quiser meu dinheiro de volta?",
-        "answer": "Você tem 7 dias corridos a partir da compra para solicitar o reembolso integral, sem nenhuma pergunta ou justificativa. Basta enviar um email para nosso suporte e processamos a devolução em até 48 horas. É simples assim - sua satisfação é nossa prioridade."
+        "question": "Et si je veux être remboursée ?",
+        "answer": "Vous disposez de 7 jours à compter de l'achat pour demander un remboursement intégral, sans aucune question ni justification. Il suffit d'envoyer un e-mail à notre support et nous traitons le remboursement sous 48 heures. C'est aussi simple que cela - votre satisfaction est notre priorité."
       },
       {
-        "question": "O método funciona para gêmeos?",
-        "answer": "Sim! Temos uma seção especial dedicada a gêmeos e múltiplos. Sabemos que é um desafio ainda maior, por isso adaptamos as técnicas para essa realidade específica. Muitas mães de gêmeos já tiveram sucesso com nosso método."
+        "question": "La méthode fonctionne-t-elle aussi pour les jumeaux ?",
+        "answer": "Oui ! Nous avons une section spéciale dédiée aux jumeaux et aux multiples. Nous savons que c'est un défi encore plus grand, c'est pourquoi nous avons adapté les techniques à cette réalité. De nombreuses mamans de jumeaux ont déjà eu du succès avec notre méthode."
       }
     ],
-    "supportTitle": "Ainda tem dúvidas? 🤔",
-    "supportText": "Nossa equipe está pronta para te ajudar! Entre em contato conosco pelo WhatsApp e tiramos todas as suas dúvidas antes da compra.",
-    "supportButton": "💬 Falar no WhatsApp"
+    "supportTitle": "Encore des questions ? 🤔",
+    "supportText": "Notre équipe est prête à vous aider ! Contactez-nous sur WhatsApp et nous répondrons à toutes vos questions avant l'achat.",
+    "supportButton": "💬 Écrire sur WhatsApp"
   },
   "finalCta": {
-    "badge": "Oferta especial por tempo limitado",
-    "titleLine1": "Você não está sozinha.",
-    "titleLine2": "Dê o primeiro passo.",
-    "subtitlePart1": "Com o",
-    "subtitlePart2": "Mamãe Tranquila",
-    "subtitlePart3": ", você pode ter noites de paz e dias mais leves. Milhares de mães já transformaram suas vidas - agora é a sua vez.",
-    "imageAlt": "Mamãe Tranquila - Guia Digital CTA",
-    "priceOld": "De R$ 97 por",
-    "priceNew": "R$ 37",
-    "trustIndicator1": "7 dias de garantia",
-    "trustIndicator2": "Acesso imediato",
-    "trustIndicator3": "5.000+ famílias",
-    "ctaTitle": "🎯 Transforme suas noites hoje!",
+    "badge": "Offre spéciale à durée limitée",
+    "titleLine1": "Vous n'êtes pas seule.",
+    "titleLine2": "Faites le premier pas.",
+    "subtitlePart1": "Avec la",
+    "subtitlePart2": "Maman Zen",
+    "subtitlePart3": ", vous pouvez vivre des nuits paisibles et des journées plus légères. Des milliers de mamans ont déjà transformé leur vie – à vous de jouer.",
+    "imageAlt": "Maman Zen – Guide Digital CTA",
+    "priceOld": "De 35 € à",
+    "priceNew": "13,97 €",
+    "trustIndicator1": "Garantie 7 jours",
+    "trustIndicator2": "Accès immédiat",
+    "trustIndicator3": "5 000+ familles",
+    "ctaTitle": "🎯 Transformez vos nuits dès aujourd'hui !",
     "ctaPoints": [
-      "Acesso imediato ao guia completo",
-      "Bônus: Grupo exclusivo de mães",
-      "Suporte dedicado por 30 dias",
-      "Garantia total de 7 dias"
+      "Accès immédiat au guide complet",
+      "Bonus : Groupe exclusif de mamans",
+      "Support dédié pendant 30 jours",
+      "Garantie totale de 7 jours"
     ],
-    "ctaButton": "🌙 Quero transformar minhas noites agora",
-    "ctaSubtext1": "🔒 Compra 100% segura • ✅ Garantia de 7 dias",
-    "ctaSubtext2": "Pagamento processado com segurança SSL",
-    "urgencyTitle": "Últimas horas da promoção!",
-    "urgencyText": "O preço promocional de R$ 37 é válido apenas hoje. Amanhã volta para R$ 97.",
-    "finalMessageTitle": "💜 Uma mãe descansada é uma mãe melhor",
-    "finalMessageText": "Você merece noites tranquilas, dias mais leves e a confiança de que está cuidando do seu bebê da melhor forma possível. Dê esse presente para você e sua família."
+    "ctaButton": "🌙 Je veux transformer mes nuits maintenant",
+    "ctaSubtext1": "🔒 Achat 100% sécurisé • ✅ Garantie 7 jours",
+    "ctaSubtext2": "Paiement sécurisé par SSL",
+    "urgencyTitle": "Dernières heures de l'offre !",
+    "urgencyText": "Le prix promotionnel de 13,97 € n'est valable qu'aujourd'hui. Demain, il repasse à 35 €.",
+    "finalMessageTitle": "💜 Une maman reposée est une meilleure maman",
+    "finalMessageText": "Vous méritez des nuits paisibles, des journées plus légères et la confiance de prendre soin de votre bébé de la meilleure façon possible. Offrez-vous, à vous et à votre famille, ce cadeau.",
+    "checkoutLink": "https://pay.30oracoes.site/checkout/185721119:1"
   }
 }

@@ -23,8 +23,8 @@ i18n
     backend: {
       loadPath: '/locales/{{lng}}/{{ns}}.json',
     },
-    // Only supporting Portuguese, English and Spanish as requested
-    supportedLngs: ['pt', 'en', 'es'],
+    // Only supporting Portuguese, English, Spanish and German as requested
+    supportedLngs: ['pt', 'en', 'es', 'de', 'it', 'fr', 'en-GB'],
     detection: {
       // order and from where user language should be detected
       order: ['navigator', 'htmlTag', 'path', 'cookie'],

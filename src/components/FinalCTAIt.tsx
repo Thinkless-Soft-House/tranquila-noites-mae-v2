@@ -1,7 +1,27 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Clock, Star, ArrowRight, Gift } from "lucide-react";
+import { useEffect, useState } from "react";
+import { getLocalizedPrice } from "@/lib/utils";
+import { useTranslation } from "react-i18next";
 
 const FinalCTAIt = () => {
+  const { t } = useTranslation();
+  const [price, setPrice] = useState<string>("");
+  const [oldPrice, setOldPrice] = useState<string>("29,90€");
+
+  useEffect(() => {
+    getLocalizedPrice().then((p) => {
+      setPrice(p.price);
+      // Exemplo: se quiser exibir o preço antigo dinâmico, pode ajustar aqui
+      if (p.price === "9 €" || p.price === "9,90€") setOldPrice("29,90€");
+      else if (p.price === "37 €") setOldPrice("97 €");
+      else if (p.price === "$9") setOldPrice("$97");
+      else setOldPrice("29,90€");
+    });
+  }, []);
+
+  const checkoutLink = t("finalCta.checkoutLink");
+
   return (
     <section className="py-24 bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 relative overflow-hidden">
       {/* Background decorations */}
@@ -39,8 +59,8 @@ const FinalCTAIt = () => {
                 {/* Price badge */}
                 <div className="absolute -top-4 right-2 sm:-right-4 bg-accent-500 text-white rounded-full p-4 shadow-lg animate-float">
                   <div className="text-center">
-                    <div className="text-xs font-medium">Invece di 29,90€</div>
-                    <div className="text-2xl font-bold">9,90€</div>
+                    <div className="text-xs font-medium">Invece di {oldPrice}</div>
+                    <div className="text-2xl font-bold">{price || "9,90€"}</div>
                   </div>
                 </div>
               </div>
@@ -98,7 +118,7 @@ const FinalCTAIt = () => {
                   className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-6 sm:px-10 py-8 text-xl font-bold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full group mx-auto flex items-center justify-center gap-2 whitespace-normal text-center"
                   asChild
                 >
-                  <a href="https://pay.it-link-fittizio.com" target="_blank" rel="noopener noreferrer">
+                  <a href={checkoutLink} target="_blank" rel="noopener noreferrer">
                     Acquista ora la tua guida
                   </a>
                 </Button>
@@ -114,8 +134,8 @@ const FinalCTAIt = () => {
                   <span className="font-bold">Ultime ore dell'offerta!</span>
                 </div>
                 <p className="text-sm">
-                  Il prezzo promozionale di 9,90€ è valido solo per oggi.<br />
-                  Da domani tornerà a 29,90€.
+                  Il prezzo promozionale di {price || "9,90€"} è valido solo per oggi.<br />
+                  Da domani tornerà a {oldPrice}
                 </p>
               </div>
             </div>

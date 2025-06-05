@@ -9,7 +9,9 @@ interface FeatureItem {
 }
 
 const ProductIntro = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const lang = i18n.resolvedLanguage || i18n.language || "pt";
+  const mockupSrc = `/lovable-uploads/mockup_${lang}.webp`;
 
   // Map icon components based on a key or index if necessary, or keep as is if icons don't change
   const featureIcons = [BookOpen, CheckCircle, Users, Clock];
@@ -69,8 +71,8 @@ const ProductIntro = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-primary-400 to-accent-400 rounded-3xl blur-3xl opacity-30 transform rotate-3"></div>
               <img 
-                src="/lovable-uploads/80510ec7-7bcf-44d8-8b82-0935e173eea4.png" 
-                alt={t("productIntro.imageAlt")} 
+                src={mockupSrc}
+                alt={t("productIntro.imageAlt")}
                 className="relative w-full max-w-md mx-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
                 loading="lazy"
               />

@@ -5,7 +5,7 @@ const TestimonialsIt = () => {
     {
       name: "Maria Rossi",
       city: "Milano, Lombardia",
-      image: "/lovable-uploads/07734f1e-a5f0-4aba-971a-2dc3247575f4.png",
+      image: "/lovable-uploads/mae3.webp.png",
       text: "In soli 3 giorni mia figlia dormiva tutta la notte. Non credevo fosse possibile! Il metodo è davvero incredibile.",
       rating: 5,
       highlight: "3 giorni per i risultati"
@@ -13,7 +13,7 @@ const TestimonialsIt = () => {
     {
       name: "Anna Bianchi",
       city: "Roma, Lazio",
-      image: "/lovable-uploads/3d25edc9-75e1-4ebe-a4aa-53ac97b5ae70.png",
+      image: "/lovable-uploads/mae1.webp",
       text: "Finalmente riesco a dormire! La guida ha salvato la mia sanità mentale e il mio matrimonio. Sono di nuovo felice e piena di energia.",
       rating: 5,
       highlight: "Trasformazione completa"
@@ -21,7 +21,7 @@ const TestimonialsIt = () => {
     {
       name: "Carla Verdi",
       city: "Napoli, Campania",
-      image: "/lovable-uploads/5da3d5d9-b257-4191-a403-37731032c15e.png",
+      image: "/lovable-uploads/mae2.webp.png",
       text: "Ero allo stremo. Questa guida mi ha dato speranza e risultati concreti. La mia bambina dorme 8 ore di fila!",
       rating: 5,
       highlight: "8 ore di sonno"

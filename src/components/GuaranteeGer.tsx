@@ -103,7 +103,7 @@ const GuaranteeGer = (props) => {
               <div className="relative mb-8 w-full flex justify-center">
                 <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-blue-400 rounded-full blur-3xl opacity-20 w-48 h-48 left-1/2 -translate-x-1/2"></div>
                 <img
-                  src="/lovable-uploads/garantiager.png"
+                  src="/lovable-uploads/garantia_de.webp"
                   alt="Garantia de 7 dias"
                   className="relative w-40 h-40 sm:w-48 sm:h-48 mx-auto drop-shadow-2xl max-w-full"
                   loading="lazy"

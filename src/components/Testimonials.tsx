@@ -23,9 +23,9 @@ const Testimonials = () => {
 
   // Static image paths - these might need adjustment if they are language-specific
   const testimonialImages = [
-    "/lovable-uploads/07734f1e-a5f0-4aba-971a-2dc3247575f4.png",
-    "/lovable-uploads/3d25edc9-75e1-4ebe-a4aa-53ac97b5ae70.png",
-    "/lovable-uploads/5da3d5d9-b257-4191-a403-37731032c15e.png"
+    "/lovable-uploads/mae3.webp",
+    "/lovable-uploads/mae1.webp",
+    "/lovable-uploads/mae2.webp"
   ];
 
   return (

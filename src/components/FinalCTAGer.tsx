@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Clock, Star, ArrowRight, Gift } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const FinalCTAGer = () => {
+  const { t } = useTranslation();
+  const checkoutLink = t("finalCta.checkoutLink");
+
   return (
     <section className="py-24 bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 relative overflow-hidden">
       {/* Background decorations */}
@@ -107,7 +111,7 @@ const FinalCTAGer = () => {
                   className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-6 sm:px-10 py-8 text-xl font-bold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full group mx-auto flex items-center justify-center gap-2 whitespace-normal text-center"
                   asChild
                 >
-                  <a href="https://pay.30oracoes.site/checkout/185628801:1">
+                  <a href={checkoutLink} target="_blank" rel="noopener noreferrer">
                     <span className="flex items-center justify-center gap-2 w-full break-words whitespace-normal">
                       <span role="img" aria-label="lua">🌙</span>
                       <span>Ich möchte meine Nächte jetzt verändern</span>

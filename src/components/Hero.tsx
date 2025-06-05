@@ -3,7 +3,12 @@ import { Star, Shield, Users } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const Hero = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const lang = i18n.resolvedLanguage || i18n.language || "pt";
+
+  // Imagens dinâmicas por idioma
+  const logoSrc = `/lovable-uploads/logo_${lang}.webp`;
+  const mockupSrc = `/lovable-uploads/mockup_${lang}.webp`;
 
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-primary-50 via-white to-accent-50 overflow-hidden">
@@ -18,8 +23,8 @@ const Hero = () => {
         {/* Logo */}
         <div className="flex items-center justify-center mb-12 animate-fade-in">
           <img 
-            src="/lovable-uploads/f89c4eb7-377c-4100-8dde-b118becb677d.png" 
-            alt={t("hero.logoAlt")} 
+            src={logoSrc}
+            alt={t("hero.logoAlt")}
             className="h-20 w-auto drop-shadow-lg"
             loading="lazy"
           />
@@ -84,9 +89,9 @@ const Hero = () => {
             {/* Social proof */}
             <div className="flex items-center justify-center lg:justify-start gap-1 pt-4">
               <div className="flex -space-x-2">
-                <img src="/lovable-uploads/07734f1e-a5f0-4aba-971a-2dc3247575f4.png" alt={t("hero.socialProofAlt")} className="w-10 h-10 rounded-full border-2 border-white object-cover" loading="lazy"/>
-                <img src="/lovable-uploads/3d25edc9-75e1-4ebe-a4aa-53ac97b5ae70.png" alt={t("hero.socialProofAlt")} className="w-10 h-10 rounded-full border-2 border-white object-cover" loading="lazy"/>
-                <img src="/lovable-uploads/5da3d5d9-b257-4191-a403-37731032c15e.png" alt={t("hero.socialProofAlt")} className="w-10 h-10 rounded-full border-2 border-white object-cover" loading="lazy"/>
+                <img src="/lovable-uploads/mae3.webp" alt={t("hero.socialProofAlt")} className="w-10 h-10 rounded-full border-2 border-white object-cover" loading="lazy"/>
+                <img src="/lovable-uploads/mae1.webp" alt={t("hero.socialProofAlt")} className="w-10 h-10 rounded-full border-2 border-white object-cover" loading="lazy"/>
+                <img src="/lovable-uploads/mae2.webp" alt={t("hero.socialProofAlt")} className="w-10 h-10 rounded-full border-2 border-white object-cover" loading="lazy"/>
               </div>
               <div className="ml-3">
                 <div className="flex">
@@ -104,8 +109,8 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-primary-400 to-accent-400 rounded-3xl blur-2xl opacity-20 transform rotate-6"></div>
               <img 
-                src="/lovable-uploads/80510ec7-7bcf-44d8-8b82-0935e173eea4.png" 
-                alt={t("hero.productImageAlt")} 
+                src={mockupSrc}
+                alt={t("hero.productImageAlt")}
                 className="relative w-full max-w-md sm:max-w-lg md:max-w-lg lg:max-w-lg h-[28.75rem] sm:h-[32rem] md:h-[36rem] rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300 object-contain"
                 loading="lazy"
               />

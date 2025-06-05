@@ -15,7 +15,7 @@ const HeroUk = () => {
         {/* Logo */}
         <div className="flex items-center justify-center mb-12 animate-fade-in">
           <img 
-            src="/lovable-uploads/f89c4eb7-377c-4100-8dde-b118becb677d.png" 
+            src="/lovable-uploads/logo_en.webp" 
             alt="Calm Mum Logo" 
             className="h-20 w-auto drop-shadow-lg"
             loading="lazy"
@@ -80,9 +80,9 @@ const HeroUk = () => {
             {/* Social proof */}
             <div className="flex items-center justify-center lg:justify-start gap-1 pt-4">
               <div className="flex -space-x-2">
-                <img src="/lovable-uploads/07734f1e-a5f0-4aba-971a-2dc3247575f4.png" alt="Customer" className="w-10 h-10 rounded-full border-2 border-white object-cover" loading="lazy"/>
-                <img src="/lovable-uploads/3d25edc9-75e1-4ebe-a4aa-53ac97b5ae70.png" alt="Customer" className="w-10 h-10 rounded-full border-2 border-white object-cover" loading="lazy"/>
-                <img src="/lovable-uploads/5da3d5d9-b257-4191-a403-37731032c15e.png" alt="Customer" className="w-10 h-10 rounded-full border-2 border-white object-cover" loading="lazy"/>
+                <img src="/lovable-uploads/mae3.webp.png" alt="Customer" className="w-10 h-10 rounded-full border-2 border-white object-cover" loading="lazy"/>
+                <img src="/lovable-uploads/mae1.webp" alt="Customer" className="w-10 h-10 rounded-full border-2 border-white object-cover" loading="lazy"/>
+                <img src="/lovable-uploads/mae2.webp.png" alt="Customer" className="w-10 h-10 rounded-full border-2 border-white object-cover" loading="lazy"/>
               </div>
               <div className="ml-3">
                 <div className="flex">

@@ -5,7 +5,7 @@ const Testimonials = () => {
     {
       name: "Emily Smith",
       city: "London",
-      image: "/lovable-uploads/07734f1e-a5f0-4aba-971a-2dc3247575f4.png",
+      image: "/lovable-uploads/mae3.webp.png",
       text: "In just 3 days my daughter was already sleeping through the night. I couldn't believe how quick it was! The method is truly amazing.",
       rating: 5,
       highlight: "3 days to results"
@@ -13,7 +13,7 @@ const Testimonials = () => {
     {
       name: "Sophie Brown", 
       city: "Manchester",
-      image: "/lovable-uploads/3d25edc9-75e1-4ebe-a4aa-53ac97b5ae70.png",
+      image: "/lovable-uploads/mae1.webp",
       text: "I finally managed to sleep! The guide saved my sanity and my marriage. I feel renewed and happy again.",
       rating: 5,
       highlight: "Complete transformation"
@@ -21,7 +21,7 @@ const Testimonials = () => {
     {
       name: "Olivia Johnson",
       city: "Birmingham", 
-      image: "/lovable-uploads/5da3d5d9-b257-4191-a403-37731032c15e.png",
+      image: "/lovable-uploads/mae2.webp.png",
       text: "I was at my limit with exhaustion. This guide gave me hope and real results. My baby now sleeps 8 hours straight!",
       rating: 5,
       highlight: "8 hours of sleep"

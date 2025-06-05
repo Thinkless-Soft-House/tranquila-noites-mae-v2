@@ -5,7 +5,7 @@ const TestimonialsGer = (props) => {
     {
       name: "Anna Müller",
       city: "Berlin",
-      image: "/lovable-uploads/07734f1e-a5f0-4aba-971a-2dc3247575f4.png",
+      image: "/lovable-uploads/mae3.webp.png",
       text: "Schon nach 3 Tagen schlief meine Tochter die ganze Nacht durch. Ich hätte nie gedacht, dass es so schnell geht! Die Methode ist wirklich unglaublich.",
       rating: 5,
       highlight: "3 Tage bis zum Ergebnis"
@@ -13,7 +13,7 @@ const TestimonialsGer = (props) => {
     {
       name: "Sophie Schneider", 
       city: "München",
-      image: "/lovable-uploads/3d25edc9-75e1-4ebe-a4aa-53ac97b5ae70.png",
+      image: "/lovable-uploads/mae1.webp",
       text: "Endlich kann ich wieder schlafen! Der Leitfaden hat meine mentale Gesundheit und meine Ehe gerettet. Ich bin wieder glücklich und voller Energie.",
       rating: 5,
       highlight: "Komplette Veränderung"
@@ -21,7 +21,7 @@ const TestimonialsGer = (props) => {
     {
       name: "Laura Becker",
       city: "Hamburg", 
-      image: "/lovable-uploads/5da3d5d9-b257-4191-a403-37731032c15e.png",
+      image: "/lovable-uploads/mae2.webp.png",
       text: "Ich war am Rande der Erschöpfung. Dieser Leitfaden hat mir Hoffnung und echte Ergebnisse gebracht. Mein Baby schläft jetzt 8 Stunden am Stück!",
       rating: 5,
       highlight: "8 Stunden Schlaf"

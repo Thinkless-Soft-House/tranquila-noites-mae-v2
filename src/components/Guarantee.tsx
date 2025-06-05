@@ -3,7 +3,9 @@ import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 
 const Guarantee = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const lang = i18n.resolvedLanguage || i18n.language || "pt";
+  const garantiaSrc = `/lovable-uploads/garantia_${lang}.webp`;
 
   return (
     <section className="py-24 bg-gradient-to-br from-green-50 via-white to-blue-50 overflow-x-hidden">
@@ -85,8 +87,8 @@ const Guarantee = () => {
               <div className="relative mb-8 w-full flex justify-center">
                 <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-blue-400 rounded-full blur-3xl opacity-20 w-48 h-48 left-1/2 -translate-x-1/2"></div>
                 <img 
-                  src="/lovable-uploads/67e2abde-2a80-4d9f-9eba-48ac1f182fbd.png" 
-                  alt={t("guarantee.imageAlt")} 
+                  src={garantiaSrc}
+                  alt={t("guarantee.imageAlt")}
                   className="relative w-40 h-40 sm:w-48 sm:h-48 mx-auto drop-shadow-2xl max-w-full"
                   loading="lazy"
                 />
