@@ -82,13 +82,5 @@
     <script type="text/plain" src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/cpsales.js"></script>
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
-    <script>
-      // Redireciona para /downsell ao clicar no botão de voltar do navegador (mobile e desktop)
-      const redirectURL = "/downsell";
-      history.pushState(null, null, location.href);
-      window.onpopstate = function () {
-        location.href = redirectURL;
-      };
-    </script>
   </body>
 </html>
