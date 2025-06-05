@@ -1,0 +1,250 @@
+{
+  "hero": {
+    "logoAlt": "Calm Mom Logo",
+    "trustIndicator1": "+5,000 satisfied mothers",
+    "trustIndicator2": "7-day guarantee",
+    "trustIndicator3": "Approved by specialists",
+    "titleLine1": "Tired of",
+    "titleLine2": "sleepless nights?",
+    "titleLine3": "We have the",
+    "titleLine4": "solution",
+    "subtitlePart1": "Discover the method that has already transformed the lives of",
+    "subtitlePart2": "thousands of mothers",
+    "subtitlePart3": "and finally have the peaceful nights you deserve.",
+    "ctaButton": "✨ I want my motherhood to be lighter",
+    "ctaSubtext": "100% secure purchase • Immediate access",
+    "socialProofAlt": "Customer",
+    "socialProofText": "More than 5,000 5-star reviews",
+    "productImageAlt": "Calm Mom - Digital Guide",
+    "badge1Value": "100%",
+    "badge1Label": "Digital",
+    "badge2Value": "7",
+    "badge2Label": "Days"
+  },
+  "painPoints": {
+    "title": "Do you recognize yourself in this situation?",
+    "subtitle": "Thousands of mothers go through this every day. But there is light at the end of the tunnel.",
+    "beforeTitle": "😰 Before",
+    "beforeSubtitle": "What you're experiencing now",
+    "problems": [
+      "Sleep poorly every night and wake up several times",
+      "Feel physically and emotionally drained",
+      "Fear making mistakes as a mother and harming your baby",
+      "Cry in hiding from tiredness and exhaustion",
+      "Can't have a moment of rest",
+      "Feel like you've lost your identity and freedom"
+    ],
+    "centerImageAlt": "Tired mother with baby",
+    "centerBadge1": "Current situation",
+    "centerBadge2": "Your new life",
+    "afterTitle": "✨ After",
+    "afterSubtitle": "How your life will be",
+    "solutions": [
+      "Peaceful nights with 6-8 hours of sleep",
+      "Renewed energy to enjoy motherhood",
+      "Total confidence in your maternal abilities",
+      "Moments of peace and joy with your baby",
+      "Time to take care of yourself",
+      "Balance between being a mother and being a woman"
+    ],
+    "transformationTitle": "🎯 The transformation is within your reach",
+    "transformationTextPart1": "With the",
+    "transformationTextPart2": "Calm Mom",
+    "transformationTextPart3": " method, you'll go from total exhaustion to peaceful nights in just 7 days."
+  },
+  "productIntro": {
+    "badge": "#1 Method in infant sleep",
+    "titleLine1": "More than a guide,",
+    "titleLine2": "a complete transformation",
+    "subtitlePart1": "The",
+    "subtitlePart2": "Calm Mom",
+    "subtitlePart3": "is the result of years of research and real experience with thousands of families. A method that really works.",
+    "features": [
+      {
+        "title": "Scientifically validated techniques",
+        "description": "Methods approved by pediatricians and infant sleep specialists"
+      },
+      {
+        "title": "Practical checklists",
+        "description": "Step-by-step guides to implement each technique with ease"
+      },
+      {
+        "title": "Real testimonials",
+        "description": "Inspiring stories from mothers who transformed their nights"
+      },
+      {
+        "title": "7-day plan",
+        "description": "Structured schedule for quick and lasting results"
+      }
+    ],
+    "imageAlt": "Calm Mom - Digital Guide Detail",
+    "guideContentTitle": "What you'll find inside the guide:",
+    "guideContentItems": [
+      "7 proven techniques to make your baby sleep quickly",
+      "How to create the perfect sleep environment",
+      "Routines that really work for each age",
+      "What to do when nothing seems to work",
+      "Self-care techniques for the exhausted mother",
+      "Day-by-day implementation plan"
+    ],
+    "bonusTitle": "Exclusive Bonus",
+    "bonusTextPart1": "Access to the private group",
+    "bonusTextPart2": "with other mothers who are going through the same journey. Support, tips, and lots of love! 💜",
+    "ctaButton": "🎯 I want to transform my nights"
+  },
+  "howItWorks": {
+    "badge": "Tested and approved method",
+    "titleLine1": "How the Calm Mom",
+    "titleLine2": "method works",
+    "subtitle": "A structured 7-day plan to completely transform your family's nights",
+    "steps": [
+      {
+        "title": "Initial diagnosis",
+        "description": "Identify your baby's profile and the main causes of sleep problems",
+        "time": "Day 1"
+      },
+      {
+        "title": "Environment preparation",
+        "description": "Set up the room and create the perfect atmosphere for peaceful nights",
+        "time": "Days 2-3"
+      },
+      {
+        "title": "Routine implementation",
+        "description": "Establish schedules and rituals that work for your family",
+        "time": "Days 4-5"
+      },
+      {
+        "title": "Adjustments and results",
+        "description": "Make the final adjustments and celebrate your first peaceful nights",
+        "time": "Days 6-7"
+      }
+    ],
+    "resultsTitle": "🎉 Results you can expect:",
+    "result1Value": "85%",
+    "result1Text": "of mothers see improvement in the first week",
+    "result2Value": "6-8h",
+    "result2Text": "of uninterrupted sleep per night",
+    "result3Value": "97%",
+    "result3Text": "would recommend the method to other mothers"
+  },
+  "testimonials": {
+    "badge": "+5,000 transformed mothers",
+    "titleLine1": "Real stories of",
+    "titleLine2": "transformation",
+    "subtitle": "See how other mothers went from total exhaustion to nights of peace and tranquility",
+    "testimonial1": {
+      "name": "Maria Silva",
+      "city": "São Paulo, SP",
+      "imageAlt": "Maria Silva",
+      "text": "In just 3 days my daughter was already sleeping through the night. I couldn't believe it would be so fast! The method is truly amazing.",
+      "highlight": "3 days for results"
+    },
+    "testimonial2": {
+      "name": "Ana Costa",
+      "city": "Rio de Janeiro, RJ",
+      "imageAlt": "Ana Costa",
+      "text": "I finally got to sleep! The guide saved my mental health and my marriage. I'm renewed and happy again.",
+      "highlight": "Complete transformation"
+    },
+    "testimonial3": {
+      "name": "Carla Santos",
+      "city": "Belo Horizonte, MG",
+      "imageAlt": "Carla Santos",
+      "text": "I was at the limit of exhaustion. This guide gave me hope and real results. My baby sleeps 8 hours straight!",
+      "highlight": "8 hours of sleep"
+    },
+    "verifiedBadge": "Verified testimonial",
+    "statsTitle": "Numbers that prove our effectiveness",
+    "stat1Value": "5,247",
+    "stat1Label": "Mothers served",
+    "stat2Value": "97%",
+    "stat2Label": "Success rate",
+    "stat3Value": "3.2",
+    "stat3Label": "Days to see results",
+    "stat4Value": "4.9",
+    "stat4Label": "Average rating (⭐⭐⭐⭐⭐)"
+  },
+  "guarantee": {
+    "badge": "100% Risk-free",
+    "titleLine1": "Full 7-Day",
+    "titleLine2": "Guarantee",
+    "detailsTitle": "Zero Risk",
+    "detailsSubtitle": "Your satisfaction guaranteed",
+    "point1": "7 complete days to test all the content",
+    "point2": "Full refund without questions or bureaucracy",
+    "point3": "Dedicated support throughout the period",
+    "howItWorksTitle": "💡 How our guarantee works:",
+    "step1": "Get the guide today",
+    "step2": "Test for 7 complete days",
+    "step3": "Didn't like it? We refund 100% of the value",
+    "imageAlt": "7-day guarantee",
+    "ctaTitle": "Your peace of mind is our priority",
+    "ctaText": "We are so confident in the results that we offer this unconditional guarantee. You have nothing to lose, only peaceful nights to gain.",
+    "offerTitle": "Limited time offer",
+    "offerText": "Take advantage of our extended guarantee and start your transformation today",
+    "ctaButton": "🛡️ I want to start with total security"
+  },
+  "faq": {
+    "badge": "Get your questions answered",
+    "titleLine1": "Frequently",
+    "titleLine2": "Asked Questions",
+    "subtitle": "We answer the main questions that other mothers have had",
+    "faqs": [
+      {
+        "question": "For what age of baby is the method recommended?",
+        "answer": "The Calm Mom method is effective for babies from 0 to 24 months. We have specific techniques adapted for each age group: newborns (0-3 months), babies (4-12 months), and toddlers (13-24 months). Each phase has its particularities and the guide addresses all of them in detail."
+      },
+      {
+        "question": "Does it really work with very active babies?",
+        "answer": "Yes! We work especially with babies considered 'difficult' or high-demand. The guide includes specific techniques for hyperactive babies, those with colic, or who have difficulty relaxing. Many mothers have reported extraordinary success precisely with babies who seemed impossible to calm."
+      },
+      {
+        "question": "How will I receive the material?",
+        "answer": "Immediately after payment confirmation, you will receive by email the link to download the complete guide in PDF. The material is available for unlimited access, and you can download it as many times as you want. We also send it via WhatsApp to ensure you receive it."
+      },
+      {
+        "question": "Can I access it on my phone?",
+        "answer": "Absolutely! The guide has been optimized for reading on mobile, tablet, computer, or can be printed. We know that mothers need practicality, so you can consult the techniques anytime, anywhere, even during the night."
+      },
+      {
+        "question": "What if I want my money back?",
+        "answer": "You have 7 calendar days from purchase to request a full refund, without any questions or justification. Just send an email to our support and we process the refund within 48 hours. It's that simple - your satisfaction is our priority."
+      },
+      {
+        "question": "Does the method work for twins?",
+        "answer": "Yes! We have a special section dedicated to twins and multiples. We know it's an even greater challenge, so we've adapted the techniques for this specific reality. Many mothers of twins have already had success with our method."
+      }
+    ],
+    "supportTitle": "Still have questions? 🤔",
+    "supportText": "Our team is ready to help you! Contact us via WhatsApp and we'll answer all your questions before purchase.",
+    "supportButton": "💬 Chat on WhatsApp"
+  },
+  "finalCta": {
+    "badge": "Special limited time offer",
+    "titleLine1": "You are not alone.",
+    "titleLine2": "Take the first step.",
+    "subtitlePart1": "With",
+    "subtitlePart2": "Calm Mom",
+    "subtitlePart3": ", you can have peaceful nights and lighter days. Thousands of mothers have already transformed their lives - now it's your turn.",
+    "imageAlt": "Calm Mom - Digital Guide CTA",
+    "priceOld": "From $97 to",
+    "priceNew": "$37",
+    "trustIndicator1": "7-day guarantee",
+    "trustIndicator2": "Immediate access",
+    "trustIndicator3": "5,000+ families",
+    "ctaTitle": "🎯 Transform your nights today!",
+    "ctaPoints": [
+      "Immediate access to the complete guide",
+      "Bonus: Exclusive mothers group",
+      "Dedicated support for 30 days",
+      "Full 7-day guarantee"
+    ],
+    "ctaButton": "🌙 I want to transform my nights now",
+    "ctaSubtext1": "🔒 100% secure purchase • ✅ 7-day guarantee",
+    "ctaSubtext2": "Payment processed with SSL security",
+    "urgencyTitle": "Last hours of the promotion!",
+    "urgencyText": "The promotional price of $37 is valid only today. Tomorrow it returns to $97.",
+    "finalMessageTitle": "💜 A rested mother is a better mother",
+    "finalMessageText": "You deserve peaceful nights, lighter days, and the confidence that you are taking care of your baby in the best possible way. Give this gift to yourself and your family."
+  }
+}

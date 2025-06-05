@@ -1,0 +1,250 @@
+{
+  "hero": {
+    "logoAlt": "Logo Mamá Tranquila",
+    "trustIndicator1": "+5.000 madres satisfechas",
+    "trustIndicator2": "Garantía de 7 días",
+    "trustIndicator3": "Aprobado por especialistas",
+    "titleLine1": "¿Cansada de",
+    "titleLine2": "noches sin dormir?",
+    "titleLine3": "Tenemos la",
+    "titleLine4": "solución",
+    "subtitlePart1": "Descubre el método que ya ha transformado la vida de",
+    "subtitlePart2": "miles de madres",
+    "subtitlePart3": "y finalmente ten las noches tranquilas que mereces.",
+    "ctaButton": "✨ Quiero que mi maternidad sea más ligera",
+    "ctaSubtext": "Compra 100% segura • Acceso inmediato",
+    "socialProofAlt": "Cliente",
+    "socialProofText": "Más de 5.000 evaluaciones de 5 estrellas",
+    "productImageAlt": "Mamá Tranquila - Guía Digital",
+    "badge1Value": "100%",
+    "badge1Label": "Digital",
+    "badge2Value": "7",
+    "badge2Label": "Días"
+  },
+  "painPoints": {
+    "title": "¿Te reconoces en esta situación?",
+    "subtitle": "Miles de madres pasan por esto todos los días. Pero hay una luz al final del túnel.",
+    "beforeTitle": "😰 Antes",
+    "beforeSubtitle": "Lo que estás viviendo ahora",
+    "problems": [
+      "Duermes mal todas las noches y te despiertas varias veces",
+      "Te sientes agotada física y emocionalmente",
+      "Tienes miedo de equivocarte como madre y perjudicar al bebé",
+      "Lloras a escondidas de cansancio y agotamiento",
+      "No puedes tener un momento de descanso",
+      "Sientes que has perdido tu identidad y libertad"
+    ],
+    "centerImageAlt": "Madre cansada con bebé",
+    "centerBadge1": "Situación actual",
+    "centerBadge2": "Tu nueva vida",
+    "afterTitle": "✨ Después",
+    "afterSubtitle": "Cómo será tu vida",
+    "solutions": [
+      "Noches tranquilas con 6-8 horas de sueño",
+      "Energía renovada para disfrutar de la maternidad",
+      "Confianza total en tus habilidades maternas",
+      "Momentos de paz y alegría con tu bebé",
+      "Tiempo para cuidar de ti misma",
+      "Equilibrio entre ser madre y ser mujer"
+    ],
+    "transformationTitle": "🎯 La transformación está a tu alcance",
+    "transformationTextPart1": "Con el método",
+    "transformationTextPart2": "Mamá Tranquila",
+    "transformationTextPart3": ", pasarás del agotamiento total a noches de paz en solo 7 días."
+  },
+  "productIntro": {
+    "badge": "Método #1 en sueño infantil",
+    "titleLine1": "Más que una guía,",
+    "titleLine2": "una transformación completa",
+    "subtitlePart1": "El",
+    "subtitlePart2": "Mamá Tranquila",
+    "subtitlePart3": "es el resultado de años de investigación y experiencia real con miles de familias. Un método que realmente funciona.",
+    "features": [
+      {
+        "title": "Técnicas validadas científicamente",
+        "description": "Métodos aprobados por pediatras y especialistas en sueño infantil"
+      },
+      {
+        "title": "Listas de verificación prácticas",
+        "description": "Guías paso a paso para implementar cada técnica con facilidad"
+      },
+      {
+        "title": "Testimonios reales",
+        "description": "Historias inspiradoras de madres que transformaron sus noches"
+      },
+      {
+        "title": "Plan de 7 días",
+        "description": "Cronograma estructurado para resultados rápidos y duraderos"
+      }
+    ],
+    "imageAlt": "Mamá Tranquila - Detalle de Guía Digital",
+    "guideContentTitle": "Lo que encontrarás dentro de la guía:",
+    "guideContentItems": [
+      "7 técnicas comprobadas para hacer que el bebé duerma rápidamente",
+      "Cómo crear el ambiente perfecto para el sueño",
+      "Rutinas que realmente funcionan para cada edad",
+      "Qué hacer cuando nada parece funcionar",
+      "Técnicas de autocuidado para la madre exhausta",
+      "Plan de implementación día a día"
+    ],
+    "bonusTitle": "Bono Exclusivo",
+    "bonusTextPart1": "Acceso al grupo privado",
+    "bonusTextPart2": "con otras madres que están pasando por el mismo camino. ¡Apoyo, consejos y mucho cariño! 💜",
+    "ctaButton": "🎯 Quiero transformar mis noches"
+  },
+  "howItWorks": {
+    "badge": "Método probado y aprobado",
+    "titleLine1": "Cómo funciona el método",
+    "titleLine2": "Mamá Tranquila",
+    "subtitle": "Un plan estructurado de 7 días para transformar completamente las noches de tu familia",
+    "steps": [
+      {
+        "title": "Diagnóstico inicial",
+        "description": "Identifica el perfil de tu bebé y las principales causas de los problemas de sueño",
+        "time": "Día 1"
+      },
+      {
+        "title": "Preparación del ambiente",
+        "description": "Configura la habitación y crea la atmósfera perfecta para noches tranquilas",
+        "time": "Días 2-3"
+      },
+      {
+        "title": "Implementación de la rutina",
+        "description": "Establece horarios y rituales que funcionan para tu familia",
+        "time": "Días 4-5"
+      },
+      {
+        "title": "Ajustes y resultados",
+        "description": "Haz los últimos ajustes y celebra tus primeras noches de paz",
+        "time": "Días 6-7"
+      }
+    ],
+    "resultsTitle": "🎉 Resultados que puedes esperar:",
+    "result1Value": "85%",
+    "result1Text": "de las madres ven mejora ya en la primera semana",
+    "result2Value": "6-8h",
+    "result2Text": "de sueño ininterrumpido por noche",
+    "result3Value": "97%",
+    "result3Text": "recomendarían el método a otras madres"
+  },
+  "testimonials": {
+    "badge": "+5.000 madres transformadas",
+    "titleLine1": "Historias reales de",
+    "titleLine2": "transformación",
+    "subtitle": "Mira cómo otras madres pasaron del agotamiento total a noches de paz y tranquilidad",
+    "testimonial1": {
+      "name": "María Silva",
+      "city": "São Paulo, SP",
+      "imageAlt": "María Silva",
+      "text": "En solo 3 días mi hija ya dormía toda la noche. ¡No creí que sería tan rápido! El método es realmente increíble.",
+      "highlight": "3 días para resultados"
+    },
+    "testimonial2": {
+      "name": "Ana Costa",
+      "city": "Río de Janeiro, RJ",
+      "imageAlt": "Ana Costa",
+      "text": "¡Finalmente pude dormir! La guía salvó mi salud mental y mi matrimonio. Estoy renovada y feliz nuevamente.",
+      "highlight": "Transformación completa"
+    },
+    "testimonial3": {
+      "name": "Carla Santos",
+      "city": "Belo Horizonte, MG",
+      "imageAlt": "Carla Santos",
+      "text": "Estaba al límite del agotamiento. Esta guía me dio esperanza y resultados reales. ¡Mi bebé duerme 8 horas seguidas!",
+      "highlight": "8 horas de sueño"
+    },
+    "verifiedBadge": "Testimonio verificado",
+    "statsTitle": "Números que comprueban nuestra eficacia",
+    "stat1Value": "5.247",
+    "stat1Label": "Madres atendidas",
+    "stat2Value": "97%",
+    "stat2Label": "Tasa de éxito",
+    "stat3Value": "3.2",
+    "stat3Label": "Días para ver resultados",
+    "stat4Value": "4.9",
+    "stat4Label": "Evaluación media (⭐⭐⭐⭐⭐)"
+  },
+  "guarantee": {
+    "badge": "100% Libre de riesgo",
+    "titleLine1": "Garantía Total de",
+    "titleLine2": "7 Días",
+    "detailsTitle": "Riesgo Cero",
+    "detailsSubtitle": "Tu satisfacción garantizada",
+    "point1": "7 días completos para probar todo el contenido",
+    "point2": "Reembolso integral sin preguntas ni burocracia",
+    "point3": "Soporte dedicado durante todo el período",
+    "howItWorksTitle": "💡 Cómo funciona nuestra garantía:",
+    "step1": "Adquiere la guía hoy",
+    "step2": "Prueba por 7 días completos",
+    "step3": "¿No te gustó? Devolvemos el 100% del valor",
+    "imageAlt": "Garantía de 7 días",
+    "ctaTitle": "Tu tranquilidad es nuestra prioridad",
+    "ctaText": "Estamos tan confiados en los resultados que ofrecemos esta garantía incondicional. No tienes nada que perder, solo noches de paz por ganar.",
+    "offerTitle": "Oferta por tiempo limitado",
+    "offerText": "Aprovecha nuestra garantía extendida y comienza tu transformación hoy mismo",
+    "ctaButton": "🛡️ Quiero comenzar con seguridad total"
+  },
+  "faq": {
+    "badge": "Resuelve tus dudas",
+    "titleLine1": "Preguntas",
+    "titleLine2": "Frecuentes",
+    "subtitle": "Respondemos las principales dudas que otras madres han tenido",
+    "faqs": [
+      {
+        "question": "¿Para qué edad del bebé está indicado el método?",
+        "answer": "El método Mamá Tranquila es eficaz para bebés de 0 a 24 meses. Tenemos técnicas específicas adaptadas para cada grupo de edad: recién nacidos (0-3 meses), bebés (4-12 meses) y niños pequeños (13-24 meses). Cada fase tiene sus particularidades y la guía aborda todas ellas detalladamente."
+      },
+      {
+        "question": "¿Funciona incluso con bebés muy agitados?",
+        "answer": "¡Sí! Trabajamos especialmente con bebés considerados 'difíciles' o con alta demanda. La guía incluye técnicas específicas para bebés hiperactivos, con cólicos o que tienen dificultades para relajarse. Muchas madres han reportado un éxito extraordinario precisamente con bebés que parecían imposibles de calmar."
+      },
+      {
+        "question": "¿Cómo recibiré el material?",
+        "answer": "Inmediatamente después de la confirmación del pago, recibirás por email el enlace para descargar la guía completa en PDF. El material queda disponible para acceso ilimitado, y puedes descargarlo cuantas veces quieras. También lo enviamos por WhatsApp para garantizar que lo recibas."
+      },
+      {
+        "question": "¿Puedo acceder desde el celular?",
+        "answer": "¡Absolutamente! La guía ha sido optimizada para lectura en celular, tablet, computadora o puede ser impresa. Sabemos que las madres necesitan practicidad, así que puedes consultar las técnicas en cualquier momento, en cualquier lugar, incluso durante las madrugadas."
+      },
+      {
+        "question": "¿Y si quiero mi dinero de vuelta?",
+        "answer": "Tienes 7 días corridos a partir de la compra para solicitar el reembolso integral, sin ninguna pregunta o justificación. Solo envía un email a nuestro soporte y procesamos la devolución en hasta 48 horas. Es así de simple - tu satisfacción es nuestra prioridad."
+      },
+      {
+        "question": "¿El método funciona para gemelos?",
+        "answer": "¡Sí! Tenemos una sección especial dedicada a gemelos y múltiples. Sabemos que es un desafío aún mayor, por eso adaptamos las técnicas para esa realidad específica. Muchas madres de gemelos ya han tenido éxito con nuestro método."
+      }
+    ],
+    "supportTitle": "¿Aún tienes dudas? 🤔",
+    "supportText": "¡Nuestro equipo está listo para ayudarte! Contáctanos por WhatsApp y resolveremos todas tus dudas antes de la compra.",
+    "supportButton": "💬 Hablar por WhatsApp"
+  },
+  "finalCta": {
+    "badge": "Oferta especial por tiempo limitado",
+    "titleLine1": "No estás sola.",
+    "titleLine2": "Da el primer paso.",
+    "subtitlePart1": "Con",
+    "subtitlePart2": "Mamá Tranquila",
+    "subtitlePart3": ", puedes tener noches de paz y días más ligeros. Miles de madres ya han transformado sus vidas - ahora es tu turno.",
+    "imageAlt": "Mamá Tranquila - Guía Digital CTA",
+    "priceOld": "De $97 por",
+    "priceNew": "$37",
+    "trustIndicator1": "7 días de garantía",
+    "trustIndicator2": "Acceso inmediato",
+    "trustIndicator3": "5.000+ familias",
+    "ctaTitle": "🎯 ¡Transforma tus noches hoy!",
+    "ctaPoints": [
+      "Acceso inmediato a la guía completa",
+      "Bono: Grupo exclusivo de madres",
+      "Soporte dedicado por 30 días",
+      "Garantía total de 7 días"
+    ],
+    "ctaButton": "🌙 Quiero transformar mis noches ahora",
+    "ctaSubtext1": "🔒 Compra 100% segura • ✅ Garantía de 7 días",
+    "ctaSubtext2": "Pago procesado con seguridad SSL",
+    "urgencyTitle": "¡Últimas horas de la promoción!",
+    "urgencyText": "El precio promocional de $37 es válido solo hoy. Mañana vuelve a $97.",
+    "finalMessageTitle": "💜 Una madre descansada es una mejor madre",
+    "finalMessageText": "Mereces noches tranquilas, días más ligeros y la confianza de que estás cuidando a tu bebé de la mejor manera posible. Date este regalo a ti y a tu familia."
+  }
+}
