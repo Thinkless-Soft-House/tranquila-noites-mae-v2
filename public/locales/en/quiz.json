@@ -12,7 +12,6 @@
       {
         "question": "How old is your baby?",
         "options": [
-          "Still in the womb",
           "0 to 3 months",
           "4 to 6 months",
           "7 to 12 months",
@@ -51,7 +50,7 @@
         "question": "What is your biggest difficulty right now?",
         "options": [
           "Lack of sleep and exhaustion",
-          "Anxiety from not knowing what to do",
+          "Anxiety for not knowing what to do",
           "Lack of routine",
           "Lack of support",
           "All of the above"
@@ -66,11 +65,48 @@
         ]
       },
       {
-        "question": "Can we show you a simple and affordable solution that has already helped over 1,200 mothers sleep better in less than 7 nights?",
+        "question": "Our program will help you create habits for peaceful nights",
+        "type": "benefits",
+        "benefits": [
+          {
+            "icon": "👶",
+            "title": "Understand your baby",
+            "description": "Learn about your baby's sleep patterns and signals"
+          },
+          {
+            "icon": "🌙",
+            "title": "Apply what you learn",
+            "description": "Practical and proven techniques to improve sleep"
+          },
+          {
+            "icon": "😴",
+            "title": "Achieve peaceful nights",
+            "description": "Have the restorative sleep you and your baby deserve"
+          }
+        ],
+        "options": [
+          "Continue"
+        ]
+      },
+      {
+        "question": "Can we show you a simple and accessible solution that has already helped more than 1,200 mothers sleep better in less than 7 nights?",
         "options": [
           "Yes, please!",
           "I want to understand how it works",
           "I still have doubts"
+        ]
+      },
+      {
+        "question": "Over 7.3 million mothers have been through this... And you are not alone.",
+        "type": "testimonial",
+        "testimonial": {
+          "image": "/lovable-uploads/juliana.png",
+          "quote": "I couldn't take it anymore. I was exhausted, not sleeping properly for weeks. My baby couldn't fall asleep and I just wanted to cry. When I discovered Peaceful Mom, everything changed. For the first time in months, I was able to lie down and sleep peacefully knowing he was also calm. This guide gave me back my sanity, my rest and my hope.",
+          "author": "— Juliana M., first-time mom",
+          "highlight": "7.3 million mothers"
+        },
+        "options": [
+          "Continue"
         ]
       },
       {
@@ -91,21 +127,11 @@
         "question": "How would you rate the quality of your sleep in recent weeks?",
         "type": "scale",
         "options": [
-          "I slept very poorly",
+          "I slept very badly",
           "I wake up several times and wake up tired",
           "I sleep well sometimes",
           "My sleep is stable, but could be better",
           "I'm sleeping well almost always"
-        ]
-      },
-      {
-        "question": "How old is your baby in months?",
-        "type": "button",
-        "options": [
-          "0 to 3 months",
-          "4 to 6 months",
-          "7 to 9 months",
-          "10 to 12 months"
         ]
       },
       {
@@ -114,7 +140,7 @@
         "options": [
           "Sleeping 6 hours straight",
           "With more energy during the day",
-          "More calm with my baby",
+          "More peaceful with my baby",
           "With organized sleep routine",
           "All of the above"
         ]
@@ -130,6 +156,15 @@
       "description": "You completed our quiz! Now we can show you a personalized solution to transform your nights and ensure the peaceful sleep you and your baby deserve.",
       "button": "I want my peaceful nights ✨"
     },
+    "loading": {
+      "title": "Finalizing...",
+      "steps": [
+        "Analyzing your baby's sleep patterns...",
+        "Identifying the best strategies for you...",
+        "Personalizing your peaceful nights plan...",
+        "Preparing your exclusive guidance..."
+      ]
+    },
     "progress": {
       "question": "Question",
       "of": "of"
@@ -137,6 +172,9 @@
     "buttons": {
       "continue": "Continue",
       "back": "Back"
+    },
+    "testimonial": {
+      "subtitle": "have been through this..."
     }
   }
 }

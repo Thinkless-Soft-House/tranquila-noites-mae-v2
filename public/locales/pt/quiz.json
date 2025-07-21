@@ -12,7 +12,6 @@
       {
         "question": "Quantos meses tem o seu bebê?",
         "options": [
-          "Ainda está na barriga",
           "0 a 3 meses",
           "4 a 6 meses",
           "7 a 12 meses",
@@ -66,11 +65,48 @@
         ]
       },
       {
+        "question": "Nosso programa vai te ajudar a criar hábitos para noites tranquilas",
+        "type": "benefits",
+        "benefits": [
+          {
+            "icon": "👶",
+            "title": "Entenda o seu bebê",
+            "description": "Aprenda sobre os padrões de sono e sinais do seu bebê"
+          },
+          {
+            "icon": "🌙",
+            "title": "Aplique o que você aprender",
+            "description": "Técnicas práticas e comprovadas para melhorar o sono"
+          },
+          {
+            "icon": "😴",
+            "title": "Conquiste noites tranquilas",
+            "description": "Tenha o sono reparador que você e seu bebê merecem"
+          }
+        ],
+        "options": [
+          "Continuar"
+        ]
+      },
+      {
         "question": "Podemos te mostrar uma solução simples e acessível que já ajudou mais de 1.200 mães a dormir melhor em menos de 7 noites?",
         "options": [
           "Sim, por favor!",
           "Quero entender como funciona",
           "Ainda tenho dúvidas"
+        ]
+      },
+      {
+        "question": "Mais de 7,3 milhões de mães já passaram por isso... E você não está sozinha.",
+        "type": "testimonial",
+        "testimonial": {
+          "image": "/lovable-uploads/juliana.png",
+          "quote": "Eu não aguentava mais. Estava exausta, sem dormir direito há semanas. Meu bebê não conseguia pegar no sono e eu só queria chorar. Quando conheci o Mamãe Tranquila, tudo mudou. Pela primeira vez em meses, consegui deitar e dormir em paz sabendo que ele também estava tranquilo. Esse guia me devolveu minha sanidade, meu descanso e minha esperança.",
+          "author": "— Juliana M., mãe de primeira viagem",
+          "highlight": "7,3 milhões de mães"
+        },
+        "options": [
+          "Continuar"
         ]
       },
       {
@@ -99,16 +135,6 @@
         ]
       },
       {
-        "question": "Seu bebê está com quantos meses?",
-        "type": "button",
-        "options": [
-          "0 a 3 meses",
-          "4 a 6 meses",
-          "7 a 9 meses",
-          "10 a 12 meses"
-        ]
-      },
-      {
         "question": "Se você seguir o plano de sono certo, como gostaria de estar em 2 semanas?",
         "type": "checkbox",
         "options": [
@@ -130,6 +156,15 @@
       "description": "Você concluiu nosso quiz! Agora podemos te mostrar uma solução personalizada para transformar suas noites e garantir o sono tranquilo que você e seu bebê merecem.",
       "button": "Quero minha noite tranquila ✨"
     },
+    "loading": {
+      "title": "Finalizando...",
+      "steps": [
+        "Analisando os padrões de sono do seu bebê...",
+        "Identificando as melhores estratégias para vocês...",
+        "Personalizando seu plano de noites tranquilas...",
+        "Preparando suas orientações exclusivas..."
+      ]
+    },
     "progress": {
       "question": "Pergunta",
       "of": "de"
@@ -137,6 +172,9 @@
     "buttons": {
       "continue": "Continuar",
       "back": "Voltar"
+    },
+    "testimonial": {
+      "subtitle": "já passaram por isso..."
     }
   }
 }

@@ -12,7 +12,6 @@
       {
         "question": "Quanti mesi ha il tuo bambino?",
         "options": [
-          "È ancora nella pancia",
           "0 a 3 mesi",
           "4 a 6 mesi",
           "7 a 12 mesi",
@@ -20,10 +19,10 @@
         ]
       },
       {
-        "question": "Come sono le tue notti ultimamente?",
+        "question": "Come sono state le tue notti ultimamente?",
         "options": [
           "Dormo poche ore e mi sveglio esausta",
-          "Il mio bambino si sveglia più volte durante la notte",
+          "Il mio bambino si sveglia più volte per notte",
           "Non dormo quasi mai, sono al limite",
           "Ho buone notti di sonno, ma voglio migliorare la routine"
         ]
@@ -38,7 +37,7 @@
         ]
       },
       {
-        "question": "Quale situazione descrive meglio la tua routine notturna?",
+        "question": "Quale di queste situazioni descrive meglio la tua routine notturna?",
         "options": [
           "Il mio bambino dorme in braccio e si sveglia se provo a metterlo nella culla",
           "Piange molto e dorme solo allattando",
@@ -58,11 +57,35 @@
         ]
       },
       {
-        "question": "Su una scala da 0 a 10, quanto desideri risolvere questo problema ora?",
+        "question": "Su una scala da 0 a 10, quanto vuoi risolvere questo ora?",
         "options": [
           "0 a 3 – Non sono pronta",
           "4 a 6 – Sto cercando soluzioni",
-          "7 a 10 – Voglio risolverlo subito!"
+          "7 a 10 – Voglio risolvere questo ora!"
+        ]
+      },
+      {
+        "question": "Il nostro programma ti aiuterà a creare abitudini per notti tranquille",
+        "type": "benefits",
+        "benefits": [
+          {
+            "icon": "👶",
+            "title": "Comprendi il tuo bambino",
+            "description": "Impara sui ritmi del sonno e i segnali del tuo bambino"
+          },
+          {
+            "icon": "🌙",
+            "title": "Applica quello che impari",
+            "description": "Tecniche pratiche e comprovate per migliorare il sonno"
+          },
+          {
+            "icon": "😴",
+            "title": "Raggiungi notti tranquille",
+            "description": "Ottieni il sonno ristoratore che tu e il tuo bambino meritate"
+          }
+        ],
+        "options": [
+          "Continua"
         ]
       },
       {
@@ -74,17 +97,30 @@
         ]
       },
       {
-        "question": "Con quale di queste sfide hai avuto più difficoltà come madre?",
+        "question": "Oltre 7,3 milioni di madri hanno vissuto questo... E non sei sola.",
+        "type": "testimonial",
+        "testimonial": {
+          "image": "/lovable-uploads/juliana.png",
+          "quote": "Non ce la facevo più. Ero esausta, non dormivo bene da settimane. Il mio bambino non riusciva ad addormentarsi e io volevo solo piangere. Quando ho conosciuto Mamma Tranquilla, tutto è cambiato. Per la prima volta in mesi, sono riuscita a coricarmi e dormire in pace sapendo che anche lui era tranquillo. Questa guida mi ha restituito la mia sanità mentale, il mio riposo e la mia speranza.",
+          "author": "— Juliana M., mamma per la prima volta",
+          "highlight": "7,3 milioni di madri"
+        },
+        "options": [
+          "Continua"
+        ]
+      },
+      {
+        "question": "Con quali di queste sfide hai lottato di più come madre?",
         "type": "checkbox",
         "instruction": "Seleziona tutte quelle che si applicano.",
         "options": [
           "Il mio bambino dorme solo in braccio",
           "Si sveglia più volte durante la notte",
           "Piange molto senza motivo",
-          "Routine del sonno sregolata",
-          "Mi sento esausta tutto il tempo",
+          "Routine del sonno disorganizzata",
+          "Mi sento stanca tutto il tempo",
           "Sento di sbagliare tutto",
-          "Ho provato di tutto e niente funziona"
+          "Ho provato tutto e niente funziona"
         ]
       },
       {
@@ -96,16 +132,6 @@
           "Dormo bene a volte",
           "Il mio sonno è stabile, ma potrebbe essere migliore",
           "Sto dormendo bene quasi sempre"
-        ]
-      },
-      {
-        "question": "Quanti mesi ha il tuo bambino?",
-        "type": "button",
-        "options": [
-          "0 a 3 mesi",
-          "4 a 6 mesi",
-          "7 a 9 mesi",
-          "10 a 12 mesi"
         ]
       },
       {
@@ -130,6 +156,15 @@
       "description": "Hai completato il nostro quiz! Ora possiamo mostrarti una soluzione personalizzata per trasformare le tue notti e garantire il sonno tranquillo che tu e il tuo bambino meritate.",
       "button": "Voglio le mie notti tranquille ✨"
     },
+    "loading": {
+      "title": "Finalizzazione...",
+      "steps": [
+        "Analizzando i modelli di sonno del tuo bambino...",
+        "Identificando le migliori strategie per te...",
+        "Personalizzando il tuo piano di notti tranquille...",
+        "Preparando le tue indicazioni esclusive..."
+      ]
+    },
     "progress": {
       "question": "Domanda",
       "of": "di"
@@ -137,6 +172,9 @@
     "buttons": {
       "continue": "Continua",
       "back": "Indietro"
+    },
+    "testimonial": {
+      "subtitle": "hanno passato questo..."
     }
   }
 }

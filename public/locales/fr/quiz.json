@@ -10,12 +10,8 @@
         ]
       },
       {
-        "question": "Quel âge a votre bébé?","quiz": {
-    "questions": [
-      {
-        "question": "Quel âge a votre bébé ?",
+        "question": "Quel âge a votre bébé?",
         "options": [
-          "Encore dans le ventre",
           "0 à 3 mois",
           "4 à 6 mois",
           "7 à 12 mois",
@@ -69,11 +65,48 @@
         ]
       },
       {
+        "question": "Notre programme vous aidera à créer des habitudes pour des nuits paisibles",
+        "type": "benefits",
+        "benefits": [
+          {
+            "icon": "👶",
+            "title": "Comprenez votre bébé",
+            "description": "Apprenez sur les rythmes de sommeil et signaux de votre bébé"
+          },
+          {
+            "icon": "🌙",
+            "title": "Appliquez ce que vous apprenez",
+            "description": "Techniques pratiques et éprouvées pour améliorer le sommeil"
+          },
+          {
+            "icon": "😴",
+            "title": "Obtenez des nuits paisibles",
+            "description": "Ayez le sommeil réparateur que vous et votre bébé méritez"
+          }
+        ],
+        "options": [
+          "Continuer"
+        ]
+      },
+      {
         "question": "Pouvons-nous vous montrer une solution simple et abordable qui a déjà aidé plus de 1 200 mères à mieux dormir en moins de 7 nuits ?",
         "options": [
           "Oui, s'il vous plaît !",
           "Je veux comprendre comment ça marche",
           "J'ai encore des doutes"
+        ]
+      },
+      {
+        "question": "Plus de 7,3 millions de mères ont vécu cela... Et vous n'êtes pas seule.",
+        "type": "testimonial",
+        "testimonial": {
+          "image": "/lovable-uploads/juliana.png",
+          "quote": "Je n'en pouvais plus. J'étais épuisée, je ne dormais pas bien depuis des semaines. Mon bébé n'arrivait pas à s'endormir et je voulais juste pleurer. Quand j'ai découvert Maman Tranquille, tout a changé. Pour la première fois en mois, j'ai pu me coucher et dormir en paix en sachant qu'il était aussi calme. Ce guide m'a rendu ma sanité mentale, mon repos et mon espoir.",
+          "author": "— Juliana M., maman pour la première fois",
+          "highlight": "7,3 millions de mères"
+        },
+        "options": [
+          "Continuer"
         ]
       },
       {
@@ -102,16 +135,6 @@
         ]
       },
       {
-        "question": "Votre bébé a combien de mois ?",
-        "type": "button",
-        "options": [
-          "0 à 3 mois",
-          "4 à 6 mois",
-          "7 à 9 mois",
-          "10 à 12 mois"
-        ]
-      },
-      {
         "question": "Si vous suivez le bon plan de sommeil, comment aimeriez-vous être dans 2 semaines ?",
         "type": "checkbox",
         "options": [
@@ -133,6 +156,15 @@
       "description": "Vous avez terminé notre quiz ! Nous pouvons maintenant vous montrer une solution personnalisée pour transformer vos nuits et garantir le sommeil paisible que vous et votre bébé méritez.",
       "button": "Je veux mes nuits tranquilles ✨"
     },
+    "loading": {
+      "title": "Finalisation...",
+      "steps": [
+        "Analyse des habitudes de sommeil de votre bébé...",
+        "Identification des meilleures stratégies pour vous...",
+        "Personnalisation de votre plan de nuits paisibles...",
+        "Préparation de vos conseils exclusifs..."
+      ]
+    },
     "progress": {
       "question": "Question",
       "of": "sur"
@@ -140,6 +172,9 @@
     "buttons": {
       "continue": "Continuer",
       "back": "Retour"
+    },
+    "testimonial": {
+      "subtitle": "ont vécu cela..."
     }
   }
 }

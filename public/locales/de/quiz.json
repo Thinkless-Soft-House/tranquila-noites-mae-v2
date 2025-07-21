@@ -12,35 +12,34 @@
       {
         "question": "Wie alt ist Ihr Baby?",
         "options": [
-          "Noch im Bauch",
           "0 bis 3 Monate",
           "4 bis 6 Monate",
           "7 bis 12 Monate",
-          "Mehr als 1 Jahr"
+          "Über 1 Jahr"
         ]
       },
       {
         "question": "Wie sind Ihre Nächte in letzter Zeit?",
         "options": [
           "Ich schlafe wenige Stunden und wache erschöpft auf",
-          "Mein Baby wacht mehrmals pro Nacht auf",
+          "Mein Baby wacht mehrmals in der Nacht auf",
           "Ich schlafe fast gar nicht, ich bin am Limit",
-          "Ich habe gute Nächte, möchte aber die Routine verbessern"
+          "Ich habe gute Nächte, aber möchte die Routine verbessern"
         ]
       },
       {
-        "question": "Haben Sie schon einmal eine Technik ausprobiert, um den Schlaf Ihres Babys zu verbessern?",
+        "question": "Haben Sie schon einmal eine Technik versucht, um den Schlaf des Babys zu verbessern?",
         "options": [
           "Nein, ich weiß nicht einmal, wo ich anfangen soll",
           "Ja, aber es hat nicht richtig funktioniert",
-          "Ich folge nur Internet-Tipps",
+          "Ich folge nur Tipps aus dem Internet",
           "Ja, mit Unterstützung von Spezialisten"
         ]
       },
       {
         "question": "Welche Situation beschreibt Ihre nächtliche Routine am besten?",
         "options": [
-          "Mein Baby schläft auf dem Arm und wacht auf, wenn ich es ins Bett lege",
+          "Mein Baby schläft in meinen Armen und wacht auf, wenn ich es ins Bett lege",
           "Es weint viel und schläft nur beim Stillen",
           "Ich muss es lange wiegen, bis es einschläft",
           "Es schläft allein, wacht aber nachts auf",
@@ -48,7 +47,7 @@
         ]
       },
       {
-        "question": "Was ist Ihre größte Schwierigkeit im Moment?",
+        "question": "Was ist im Moment Ihre größte Schwierigkeit?",
         "options": [
           "Schlafmangel und Erschöpfung",
           "Angst, nicht zu wissen, was zu tun ist",
@@ -66,6 +65,30 @@
         ]
       },
       {
+        "question": "Unser Programm wird Ihnen helfen, Gewohnheiten für ruhige Nächte zu entwickeln",
+        "type": "benefits",
+        "benefits": [
+          {
+            "icon": "👶",
+            "title": "Verstehen Sie Ihr Baby",
+            "description": "Lernen Sie über die Schlafmuster und Signale Ihres Babys"
+          },
+          {
+            "icon": "🌙",
+            "title": "Wenden Sie an, was Sie lernen",
+            "description": "Praktische und bewährte Techniken zur Verbesserung des Schlafs"
+          },
+          {
+            "icon": "😴",
+            "title": "Erreichen Sie ruhige Nächte",
+            "description": "Erhalten Sie den erholsamen Schlaf, den Sie und Ihr Baby verdienen"
+          }
+        ],
+        "options": [
+          "Weiter"
+        ]
+      },
+      {
         "question": "Können wir Ihnen eine einfache und erschwingliche Lösung zeigen, die bereits über 1.200 Müttern geholfen hat, in weniger als 7 Nächten besser zu schlafen?",
         "options": [
           "Ja, bitte!",
@@ -74,11 +97,24 @@
         ]
       },
       {
+        "question": "Über 7,3 Millionen Mütter haben das durchgemacht... Und Sie sind nicht allein.",
+        "type": "testimonial",
+        "testimonial": {
+          "image": "/lovable-uploads/juliana.png",
+          "quote": "Ich konnte nicht mehr. Ich war erschöpft, schlief wochenlang nicht richtig. Mein Baby konnte nicht einschlafen und ich wollte nur weinen. Als ich Ruhige Mama entdeckte, änderte sich alles. Zum ersten Mal seit Monaten konnte ich mich hinlegen und friedlich schlafen, wissend, dass er auch ruhig war. Dieser Leitfaden gab mir meine geistige Gesundheit, meine Ruhe und meine Hoffnung zurück.",
+          "author": "— Juliana M., Erstmutter",
+          "highlight": "7,3 Millionen Mütter"
+        },
+        "options": [
+          "Weiter"
+        ]
+      },
+      {
         "question": "Mit welchen dieser Herausforderungen haben Sie als Mutter am meisten zu kämpfen?",
         "type": "checkbox",
         "instruction": "Wählen Sie alle zutreffenden aus.",
         "options": [
-          "Mein Baby schläft nur auf dem Arm",
+          "Mein Baby schläft nur in meinen Armen",
           "Wacht mehrmals in der Nacht auf",
           "Weint viel ohne Grund",
           "Unregelmäßige Schlafroutine",
@@ -99,21 +135,11 @@
         ]
       },
       {
-        "question": "Wie viele Monate ist Ihr Baby alt?",
-        "type": "button",
-        "options": [
-          "0 bis 3 Monate",
-          "4 bis 6 Monate",
-          "7 bis 9 Monate",
-          "10 bis 12 Monate"
-        ]
-      },
-      {
         "question": "Wenn Sie den richtigen Schlafplan befolgen, wie möchten Sie in 2 Wochen sein?",
         "type": "checkbox",
         "options": [
           "6 Stunden am Stück schlafen",
-          "Mit mehr Energie während des Tages",
+          "Mit mehr Energie tagsüber",
           "Ruhiger mit meinem Baby",
           "Mit organisierter Schlafroutine",
           "Alle oben genannten"
@@ -122,13 +148,22 @@
     ],
     "finalResult": {
       "title": "✨ Personalisiertes Ergebnis",
-      "description": "Ihr Baby befindet sich wahrscheinlich in einer sensiblen Schlafphase.\nAber mit der richtigen Anleitung kann es bereits in 7 Nächten besser schlafen.\n\n📘 Wir empfehlen den Ratgeber **Ruhige Mama — Der 7-Nächte-Plan**, um Ihre Routine auf einfache, praktische und bewährte Weise zu transformieren.\n\n👉 Klicken Sie auf die Schaltfläche unten, um jetzt mit exklusivem Rabatt Zugang zu erhalten.",
-      "button": "Zugang zu Meinem Schlafratgeber"
+      "description": "Ihr Baby befindet sich wahrscheinlich in einer sensiblen Schlafphase.\nAber mit der richtigen Anleitung kann es bereits in 7 Nächten besser schlafen.\n\n📘 Wir empfehlen den Leitfaden **Ruhige Mama — Der 7-Nächte-Plan**, um Ihre Routine auf einfache, praktische und bewährte Weise zu transformieren.\n\n👉 Klicken Sie auf die Schaltfläche unten, um jetzt mit exklusivem Rabatt Zugang zu erhalten.",
+      "button": "Zugang zu meinem Schlafführer"
     },
     "completion": {
-      "title": "Herzlichen Glückwunsch! 🎉",
-      "description": "Sie haben unser Quiz abgeschlossen! Jetzt können wir Ihnen eine personalisierte Lösung zeigen, um Ihre Nächte zu verwandeln und den ruhigen Schlaf zu gewährleisten, den Sie und Ihr Baby verdienen.",
+      "title": "Glückwunsch! 🎉",
+      "description": "Sie haben unser Quiz abgeschlossen! Jetzt können wir Ihnen eine personalisierte Lösung zeigen, um Ihre Nächte zu transformieren und den ruhigen Schlaf zu gewährleisten, den Sie und Ihr Baby verdienen.",
       "button": "Ich möchte meine ruhigen Nächte ✨"
+    },
+    "loading": {
+      "title": "Finalisierung...",
+      "steps": [
+        "Analyse der Schlafmuster Ihres Babys...",
+        "Identifizierung der besten Strategien für Sie...",
+        "Personalisierung Ihres Plans für ruhige Nächte...",
+        "Vorbereitung Ihrer exklusiven Anleitung..."
+      ]
     },
     "progress": {
       "question": "Frage",
@@ -137,6 +172,9 @@
     "buttons": {
       "continue": "Weiter",
       "back": "Zurück"
+    },
+    "testimonial": {
+      "subtitle": "haben das durchgemacht..."
     }
   }
 }

@@ -12,7 +12,6 @@
       {
         "question": "¿Cuántos meses tiene tu bebé?",
         "options": [
-          "Aún está en el vientre",
           "0 a 3 meses",
           "4 a 6 meses",
           "7 a 12 meses",
@@ -20,16 +19,16 @@
         ]
       },
       {
-        "question": "¿Cómo han estado tus noches de sueño últimamente?",
+        "question": "¿Cómo han estado tus noches últimamente?",
         "options": [
           "Duermo pocas horas y despierto agotada",
-          "Mi bebé despierta varias veces por la noche",
+          "Mi bebé despierta varias veces por noche",
           "Casi no duermo, estoy al límite",
           "Tengo buenas noches de sueño, pero quiero mejorar la rutina"
         ]
       },
       {
-        "question": "¿Has intentado alguna técnica para mejorar el sueño del bebé?",
+        "question": "¿Has probado alguna técnica para mejorar el sueño del bebé?",
         "options": [
           "No, ni siquiera sé por dónde empezar",
           "Sí, pero no funcionó bien",
@@ -40,11 +39,11 @@
       {
         "question": "¿Cuál de estas situaciones describe mejor tu rutina nocturna?",
         "options": [
-          "Mi bebé duerme en brazos y despierta si intento ponerlo en la cuna",
-          "Llora mucho y solo duerme mamando",
+          "Mi bebé duerme en brazos y despierta si trato de ponerlo en la cuna",
+          "Llora mucho y solo duerme amamantando",
           "Necesito arrullarlo mucho tiempo hasta que se duerma",
           "Duerme solo, pero despierta durante la noche",
-          "Estoy buscando una rutina más tranquila"
+          "Busco una rutina más tranquila"
         ]
       },
       {
@@ -58,15 +57,39 @@
         ]
       },
       {
-        "question": "En una escala del 0 al 10, ¿cuánto deseas resolver esto ahora?",
+        "question": "En una escala de 0 a 10, ¿cuánto deseas resolver esto ahora?",
         "options": [
           "0 a 3 – No estoy lista",
-          "4 a 6 – Estoy investigando soluciones",
-          "7 a 10 – ¡Quiero resolverlo ya!"
+          "4 a 6 – Estoy buscando soluciones",
+          "7 a 10 – ¡Quiero resolver esto ya!"
         ]
       },
       {
-        "question": "¿Podemos mostrarte una solución simple y accesible que ya ha ayudado a más de 1.200 madres a dormir mejor en menos de 7 noches?",
+        "question": "Nuestro programa te ayudará a crear hábitos para noches tranquilas",
+        "type": "benefits",
+        "benefits": [
+          {
+            "icon": "👶",
+            "title": "Entiende a tu bebé",
+            "description": "Aprende sobre los patrones de sueño y señales de tu bebé"
+          },
+          {
+            "icon": "🌙",
+            "title": "Aplica lo que aprendas",
+            "description": "Técnicas prácticas y comprobadas para mejorar el sueño"
+          },
+          {
+            "icon": "😴",
+            "title": "Logra noches tranquilas",
+            "description": "Obtén el sueño reparador que tú y tu bebé merecen"
+          }
+        ],
+        "options": [
+          "Continuar"
+        ]
+      },
+      {
+        "question": "¿Podemos mostrarte una solución simple y accesible que ya ha ayudado a más de 1,200 madres a dormir mejor en menos de 7 noches?",
         "options": [
           "¡Sí, por favor!",
           "Quiero entender cómo funciona",
@@ -74,17 +97,30 @@
         ]
       },
       {
-        "question": "¿Con cuáles de estos desafíos has estado lidiando más como madre?",
+        "question": "Más de 7,3 millones de madres han pasado por esto... Y no estás sola.",
+        "type": "testimonial",
+        "testimonial": {
+          "image": "/lovable-uploads/juliana.png",
+          "quote": "Ya no aguantaba más. Estaba agotada, sin dormir bien durante semanas. Mi bebé no podía conciliar el sueño y yo solo quería llorar. Cuando conocí Mamá Tranquila, todo cambió. Por primera vez en meses, pude acostarme y dormir en paz sabiendo que él también estaba tranquilo. Esta guía me devolvió mi cordura, mi descanso y mi esperanza.",
+          "author": "— Juliana M., madre primeriza",
+          "highlight": "7,3 millones de madres"
+        },
+        "options": [
+          "Continuar"
+        ]
+      },
+      {
+        "question": "¿Con cuáles de estos desafíos has luchado más como madre?",
         "type": "checkbox",
         "instruction": "Selecciona todas las que apliquen.",
         "options": [
           "Mi bebé solo duerme en brazos",
-          "Despierta varias veces por la noche",
+          "Despierta varias veces en la noche",
           "Llora mucho sin razón",
-          "Rutina de sueño desregulada",
+          "Rutina de sueño desorganizada",
           "Me siento agotada todo el tiempo",
           "Siento que estoy haciendo todo mal",
-          "Ya intenté de todo y nada funciona"
+          "Ya probé todo y nada funciona"
         ]
       },
       {
@@ -92,20 +128,10 @@
         "type": "scale",
         "options": [
           "Dormí muy mal",
-          "Despierto varias veces y despierto cansada",
+          "Despierto varias veces y me levanto cansada",
           "Duermo bien a veces",
           "Mi sueño está estable, pero podría ser mejor",
           "Estoy durmiendo bien casi siempre"
-        ]
-      },
-      {
-        "question": "¿Tu bebé tiene cuántos meses?",
-        "type": "button",
-        "options": [
-          "0 a 3 meses",
-          "4 a 6 meses",
-          "7 a 9 meses",
-          "10 a 12 meses"
         ]
       },
       {
@@ -122,13 +148,22 @@
     ],
     "finalResult": {
       "title": "✨ Resultado Personalizado",
-      "description": "Tu bebé probablemente está en una fase sensible del sueño.\nPero con la orientación correcta, en 7 noches ya puede dormir mejor.\n\n📘 Recomendamos la guía **Mamá Tranquila — El Plan de 7 Noches** para transformar tu rutina de forma simple, práctica y comprobada.\n\n👉 Haz clic en el botón de abajo para acceder ahora con descuento exclusivo.",
-      "button": "Acceder a Mi Guía de Sueño"
+      "description": "Tu bebé probablemente está en una fase sensible del sueño.\nPero con las orientaciones correctas, en 7 noches ya puede dormir mejor.\n\n📘 Recomendamos la guía **Mamá Tranquila — El Plan de 7 Noches** para transformar tu rutina de manera simple, práctica y comprobada.\n\n👉 Haz clic en el botón de abajo para acceder ahora con descuento exclusivo.",
+      "button": "Acceder a Mi Guía del Sueño"
     },
     "completion": {
-      "title": "¡Felicitaciones! 🎉",
-      "description": "¡Completaste nuestro quiz! Ahora podemos mostrarte una solución personalizada para transformar tus noches y garantizar el sueño tranquilo que tú y tu bebé merecen.",
+      "title": "¡Felicidades! 🎉",
+      "description": "¡Has completado nuestro quiz! Ahora podemos mostrarte una solución personalizada para transformar tus noches y garantizar el sueño tranquilo que tú y tu bebé merecen.",
       "button": "Quiero mis noches tranquilas ✨"
+    },
+    "loading": {
+      "title": "Finalizando...",
+      "steps": [
+        "Analizando los patrones de sueño de tu bebé...",
+        "Identificando las mejores estrategias para ti...",
+        "Personalizando tu plan de noches tranquilas...",
+        "Preparando tus orientaciones exclusivas..."
+      ]
     },
     "progress": {
       "question": "Pregunta",
@@ -137,6 +172,9 @@
     "buttons": {
       "continue": "Continuar",
       "back": "Volver"
+    },
+    "testimonial": {
+      "subtitle": "han pasado por esto..."
     }
   }
 }
