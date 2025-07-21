@@ -1,0 +1,142 @@
+{
+  "quiz": {
+    "questions": [
+      {
+        "question": "What is your baby's gender?",
+        "type": "gender",
+        "options": [
+          "Boy",
+          "Girl"
+        ]
+      },
+      {
+        "question": "How old is your baby?",
+        "options": [
+          "Still in the womb",
+          "0 to 3 months",
+          "4 to 6 months",
+          "7 to 12 months",
+          "More than 1 year"
+        ]
+      },
+      {
+        "question": "How have your nights been lately?",
+        "options": [
+          "I sleep few hours and wake up exhausted",
+          "My baby wakes up several times per night",
+          "I barely sleep, I'm at my limit",
+          "I have good nights of sleep, but want to improve the routine"
+        ]
+      },
+      {
+        "question": "Have you tried any technique to improve your baby's sleep?",
+        "options": [
+          "No, I don't even know where to start",
+          "Yes, but it didn't work properly",
+          "I only follow internet tips",
+          "Yes, with specialist support"
+        ]
+      },
+      {
+        "question": "Which situation best describes your nighttime routine?",
+        "options": [
+          "My baby sleeps in my arms and wakes up if I try to put them in the crib",
+          "They cry a lot and only sleep while nursing",
+          "I need to soothe for a long time until they fall asleep",
+          "They sleep alone, but wake up during the night",
+          "I'm looking for a more peaceful routine"
+        ]
+      },
+      {
+        "question": "What is your biggest difficulty right now?",
+        "options": [
+          "Lack of sleep and exhaustion",
+          "Anxiety from not knowing what to do",
+          "Lack of routine",
+          "Lack of support",
+          "All of the above"
+        ]
+      },
+      {
+        "question": "On a scale of 0 to 10, how much do you want to solve this now?",
+        "options": [
+          "0 to 3 – I'm not ready",
+          "4 to 6 – I'm researching solutions",
+          "7 to 10 – I want to solve this now!"
+        ]
+      },
+      {
+        "question": "Can we show you a simple and affordable solution that has already helped over 1,200 mothers sleep better in less than 7 nights?",
+        "options": [
+          "Yes, please!",
+          "I want to understand how it works",
+          "I still have doubts"
+        ]
+      },
+      {
+        "question": "Which of these challenges have you been dealing with most as a mother?",
+        "type": "checkbox",
+        "instruction": "Select all that apply.",
+        "options": [
+          "My baby only sleeps in my arms",
+          "Wakes up several times at night",
+          "Cries a lot for no reason",
+          "Unregulated sleep routine",
+          "I feel exhausted all the time",
+          "I feel like I'm doing everything wrong",
+          "I've tried everything and nothing works"
+        ]
+      },
+      {
+        "question": "How would you rate the quality of your sleep in recent weeks?",
+        "type": "scale",
+        "options": [
+          "I slept very poorly",
+          "I wake up several times and wake up tired",
+          "I sleep well sometimes",
+          "My sleep is stable, but could be better",
+          "I'm sleeping well almost always"
+        ]
+      },
+      {
+        "question": "How old is your baby in months?",
+        "type": "button",
+        "options": [
+          "0 to 3 months",
+          "4 to 6 months",
+          "7 to 9 months",
+          "10 to 12 months"
+        ]
+      },
+      {
+        "question": "If you follow the right sleep plan, how would you like to be in 2 weeks?",
+        "type": "checkbox",
+        "options": [
+          "Sleeping 6 hours straight",
+          "With more energy during the day",
+          "More calm with my baby",
+          "With organized sleep routine",
+          "All of the above"
+        ]
+      }
+    ],
+    "finalResult": {
+      "title": "✨ Personalized Result",
+      "description": "Your baby is probably in a sensitive sleep phase.\nBut with the right guidance, in 7 nights they can already sleep better.\n\n📘 We recommend the **Calm Mom — The 7-Night Plan** guide to transform your routine in a simple, practical and proven way.\n\n👉 Click the button below to get access now with exclusive discount.",
+      "button": "Access My Sleep Guide"
+    },
+    "completion": {
+      "title": "Congratulations! 🎉",
+      "description": "You completed our quiz! Now we can show you a personalized solution to transform your nights and ensure the peaceful sleep you and your baby deserve.",
+      "button": "I want my peaceful nights ✨"
+    },
+    "progress": {
+      "question": "Question",
+      "of": "of"
+    },
+    "buttons": {
+      "continue": "Continue",
+      "back": "Back"
+    }
+  }
+}

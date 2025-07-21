@@ -1,0 +1,142 @@
+{
+  "quiz": {
+    "questions": [
+      {
+        "question": "Qual o sexo do seu bebê?",
+        "type": "gender",
+        "options": [
+          "Menino",
+          "Menina"
+        ]
+      },
+      {
+        "question": "Quantos meses tem o seu bebê?",
+        "options": [
+          "Ainda está na barriga",
+          "0 a 3 meses",
+          "4 a 6 meses",
+          "7 a 12 meses",
+          "Mais de 1 ano"
+        ]
+      },
+      {
+        "question": "Como estão as suas noites de sono ultimamente?",
+        "options": [
+          "Durmo poucas horas e acordo exausta",
+          "Meu bebê acorda várias vezes por noite",
+          "Quase não durmo, estou no limite",
+          "Tenho boas noites de sono, mas quero melhorar a rotina"
+        ]
+      },
+      {
+        "question": "Você já tentou alguma técnica para melhorar o sono do bebê?",
+        "options": [
+          "Não, não sei nem por onde começar",
+          "Sim, mas não funcionou direito",
+          "Só sigo dicas da internet",
+          "Sim, com apoio de especialistas"
+        ]
+      },
+      {
+        "question": "Qual dessas situações mais descreve sua rotina à noite?",
+        "options": [
+          "Meu bebê dorme no colo e acorda se eu tento colocar no berço",
+          "Ele chora muito e só dorme mamando",
+          "Preciso ninar por muito tempo até ele pegar no sono",
+          "Ele dorme sozinho, mas acorda durante a noite",
+          "Estou buscando uma rotina mais tranquila"
+        ]
+      },
+      {
+        "question": "Qual é a sua maior dificuldade no momento?",
+        "options": [
+          "Falta de sono e exaustão",
+          "Ansiedade por não saber o que fazer",
+          "Falta de rotina",
+          "Falta de apoio",
+          "Todas as anteriores"
+        ]
+      },
+      {
+        "question": "Em uma escala de 0 a 10, quanto você deseja resolver isso agora?",
+        "options": [
+          "0 a 3 – Não estou pronta",
+          "4 a 6 – Estou pesquisando soluções",
+          "7 a 10 – Quero resolver isso já!"
+        ]
+      },
+      {
+        "question": "Podemos te mostrar uma solução simples e acessível que já ajudou mais de 1.200 mães a dormir melhor em menos de 7 noites?",
+        "options": [
+          "Sim, por favor!",
+          "Quero entender como funciona",
+          "Ainda tenho dúvidas"
+        ]
+      },
+      {
+        "question": "Com quais desses desafios você mais tem lidado como mãe?",
+        "type": "checkbox",
+        "instruction": "Selecione todas que se aplicam.",
+        "options": [
+          "Meu bebê só dorme no colo",
+          "Acorda várias vezes à noite",
+          "Chora muito sem motivo",
+          "Rotina de sono desregulada",
+          "Me sinto exausta o tempo todo",
+          "Sinto que estou fazendo tudo errado",
+          "Já tentei de tudo e nada funciona"
+        ]
+      },
+      {
+        "question": "Como você classificaria a qualidade do seu sono nas últimas semanas?",
+        "type": "scale",
+        "options": [
+          "Dormi muito mal",
+          "Acordo várias vezes e acordo cansada",
+          "Durmo bem às vezes",
+          "Meu sono está estável, mas poderia ser melhor",
+          "Estou dormindo bem quase sempre"
+        ]
+      },
+      {
+        "question": "Seu bebê está com quantos meses?",
+        "type": "button",
+        "options": [
+          "0 a 3 meses",
+          "4 a 6 meses",
+          "7 a 9 meses",
+          "10 a 12 meses"
+        ]
+      },
+      {
+        "question": "Se você seguir o plano de sono certo, como gostaria de estar em 2 semanas?",
+        "type": "checkbox",
+        "options": [
+          "Dormindo 6 horas seguidas",
+          "Com mais energia durante o dia",
+          "Mais tranquila com meu bebê",
+          "Com rotina de sono organizada",
+          "Todas as anteriores"
+        ]
+      }
+    ],
+    "finalResult": {
+      "title": "✨ Resultado Personalizado",
+      "description": "Seu bebê provavelmente está em uma fase sensível do sono.\nMas com as orientações certas, em 7 noites ele já pode dormir melhor.\n\n📘 Recomendamos o guia **Mamãe Tranquila — O Plano de 7 Noites** para transformar sua rotina de forma simples, prática e comprovada.\n\n👉 Clique no botão abaixo para ter acesso agora com desconto exclusivo.",
+      "button": "Acessar Meu Guia de Sono"
+    },
+    "completion": {
+      "title": "Parabéns! 🎉",
+      "description": "Você concluiu nosso quiz! Agora podemos te mostrar uma solução personalizada para transformar suas noites e garantir o sono tranquilo que você e seu bebê merecem.",
+      "button": "Quero minha noite tranquila ✨"
+    },
+    "progress": {
+      "question": "Pergunta",
+      "of": "de"
+    },
+    "buttons": {
+      "continue": "Continuar",
+      "back": "Voltar"
+    }
+  }
+}

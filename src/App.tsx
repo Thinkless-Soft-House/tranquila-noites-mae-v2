@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Downsell from "./pages/Downsell"; // Keep Downsell if it's a separate page
+import Quiz from "./components/Quiz";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +19,7 @@ const App = () => (
         {/* LanguageSwitcher removido para usar apenas detecção automática do idioma do navegador */}
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/quiz" element={<Quiz />} />
           <Route path="/downsell" element={<Downsell />} />
           {/* Remove old language-specific routes */}
           {/* <Route path="/ger" element={<Ger />} /> */}

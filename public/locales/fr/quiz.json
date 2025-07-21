@@ -1,0 +1,145 @@
+{
+  "quiz": {
+    "questions": [
+      {
+        "question": "Quel est le sexe de votre bébé?",
+        "type": "gender",
+        "options": [
+          "Garçon",
+          "Fille"
+        ]
+      },
+      {
+        "question": "Quel âge a votre bébé?","quiz": {
+    "questions": [
+      {
+        "question": "Quel âge a votre bébé ?",
+        "options": [
+          "Encore dans le ventre",
+          "0 à 3 mois",
+          "4 à 6 mois",
+          "7 à 12 mois",
+          "Plus d'1 an"
+        ]
+      },
+      {
+        "question": "Comment se passent vos nuits dernièrement ?",
+        "options": [
+          "Je dors peu d'heures et me réveille épuisée",
+          "Mon bébé se réveille plusieurs fois par nuit",
+          "Je ne dors presque pas, je suis à bout",
+          "J'ai de bonnes nuits de sommeil, mais je veux améliorer la routine"
+        ]
+      },
+      {
+        "question": "Avez-vous déjà essayé une technique pour améliorer le sommeil de bébé ?",
+        "options": [
+          "Non, je ne sais même pas par où commencer",
+          "Oui, mais ça n'a pas bien fonctionné",
+          "Je ne suis que les conseils d'internet",
+          "Oui, avec l'aide de spécialistes"
+        ]
+      },
+      {
+        "question": "Quelle situation décrit le mieux votre routine nocturne ?",
+        "options": [
+          "Mon bébé dort dans mes bras et se réveille si j'essaie de le mettre dans le berceau",
+          "Il pleure beaucoup et ne dort qu'en tétant",
+          "Je dois le bercer longtemps avant qu'il s'endorme",
+          "Il dort seul, mais se réveille pendant la nuit",
+          "Je cherche une routine plus paisible"
+        ]
+      },
+      {
+        "question": "Quelle est votre plus grande difficulté en ce moment ?",
+        "options": [
+          "Manque de sommeil et épuisement",
+          "Anxiété de ne pas savoir quoi faire",
+          "Manque de routine",
+          "Manque de soutien",
+          "Toutes les réponses ci-dessus"
+        ]
+      },
+      {
+        "question": "Sur une échelle de 0 à 10, à quel point voulez-vous résoudre cela maintenant ?",
+        "options": [
+          "0 à 3 – Je ne suis pas prête",
+          "4 à 6 – Je recherche des solutions",
+          "7 à 10 – Je veux résoudre cela maintenant !"
+        ]
+      },
+      {
+        "question": "Pouvons-nous vous montrer une solution simple et abordable qui a déjà aidé plus de 1 200 mères à mieux dormir en moins de 7 nuits ?",
+        "options": [
+          "Oui, s'il vous plaît !",
+          "Je veux comprendre comment ça marche",
+          "J'ai encore des doutes"
+        ]
+      },
+      {
+        "question": "Avec lesquels de ces défis avez-vous le plus lutté en tant que mère ?",
+        "type": "checkbox",
+        "instruction": "Sélectionnez toutes les réponses qui s'appliquent.",
+        "options": [
+          "Mon bébé ne dort que dans mes bras",
+          "Se réveille plusieurs fois la nuit",
+          "Pleure beaucoup sans raison",
+          "Routine de sommeil déréglée",
+          "Je me sens épuisée tout le temps",
+          "J'ai l'impression de tout faire mal",
+          "J'ai tout essayé et rien ne marche"
+        ]
+      },
+      {
+        "question": "Comment évalueriez-vous la qualité de votre sommeil ces dernières semaines ?",
+        "type": "scale",
+        "options": [
+          "J'ai très mal dormi",
+          "Je me réveille plusieurs fois et je me réveille fatiguée",
+          "Je dors bien parfois",
+          "Mon sommeil est stable, mais pourrait être meilleur",
+          "Je dors bien presque toujours"
+        ]
+      },
+      {
+        "question": "Votre bébé a combien de mois ?",
+        "type": "button",
+        "options": [
+          "0 à 3 mois",
+          "4 à 6 mois",
+          "7 à 9 mois",
+          "10 à 12 mois"
+        ]
+      },
+      {
+        "question": "Si vous suivez le bon plan de sommeil, comment aimeriez-vous être dans 2 semaines ?",
+        "type": "checkbox",
+        "options": [
+          "Dormir 6 heures d'affilée",
+          "Avec plus d'énergie pendant la journée",
+          "Plus calme avec mon bébé",
+          "Avec une routine de sommeil organisée",
+          "Toutes les réponses ci-dessus"
+        ]
+      }
+    ],
+    "finalResult": {
+      "title": "✨ Résultat Personnalisé",
+      "description": "Votre bébé est probablement dans une phase sensible du sommeil.\nMais avec les bonnes orientations, en 7 nuits il peut déjà mieux dormir.\n\n📘 Nous recommandons le guide **Maman Tranquille — Le Plan de 7 Nuits** pour transformer votre routine de manière simple, pratique et prouvée.\n\n👉 Cliquez sur le bouton ci-dessous pour accéder maintenant avec une remise exclusive.",
+      "button": "Accéder à Mon Guide du Sommeil"
+    },
+    "completion": {
+      "title": "Félicitations ! 🎉",
+      "description": "Vous avez terminé notre quiz ! Nous pouvons maintenant vous montrer une solution personnalisée pour transformer vos nuits et garantir le sommeil paisible que vous et votre bébé méritez.",
+      "button": "Je veux mes nuits tranquilles ✨"
+    },
+    "progress": {
+      "question": "Question",
+      "of": "sur"
+    },
+    "buttons": {
+      "continue": "Continuer",
+      "back": "Retour"
+    }
+  }
+}
