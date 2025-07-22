@@ -15,16 +15,16 @@
           "0 bis 3 Monate",
           "4 bis 6 Monate",
           "7 bis 12 Monate",
-          "Über 1 Jahr"
+          "Mehr als 1 Jahr"
         ]
       },
       {
         "question": "Wie sind Ihre Nächte in letzter Zeit?",
         "options": [
           "Ich schlafe wenige Stunden und wache erschöpft auf",
-          "Mein Baby wacht mehrmals in der Nacht auf",
-          "Ich schlafe fast gar nicht, ich bin am Limit",
-          "Ich habe gute Nächte, aber möchte die Routine verbessern"
+          "Mein Baby wacht mehrmals pro Nacht auf",
+          "Ich schlafe kaum, ich bin am Limit",
+          "Ich habe gute Nächte, möchte aber die Routine verbessern"
         ]
       },
       {
@@ -32,8 +32,8 @@
         "options": [
           "Nein, ich weiß nicht einmal, wo ich anfangen soll",
           "Ja, aber es hat nicht richtig funktioniert",
-          "Ich folge nur Tipps aus dem Internet",
-          "Ja, mit Unterstützung von Spezialisten"
+          "Ich folge nur Internet-Tipps",
+          "Ja, mit professioneller Unterstützung"
         ]
       },
       {
@@ -41,7 +41,7 @@
         "options": [
           "Mein Baby schläft in meinen Armen und wacht auf, wenn ich es ins Bett lege",
           "Es weint viel und schläft nur beim Stillen",
-          "Ich muss es lange wiegen, bis es einschläft",
+          "Ich brauche lange, um es zu beruhigen, bis es einschläft",
           "Es schläft allein, wacht aber nachts auf",
           "Ich suche nach einer ruhigeren Routine"
         ]
@@ -50,18 +50,18 @@
         "question": "Was ist im Moment Ihre größte Schwierigkeit?",
         "options": [
           "Schlafmangel und Erschöpfung",
-          "Angst, nicht zu wissen, was zu tun ist",
-          "Mangel an Routine",
-          "Mangel an Unterstützung",
+          "Angst, weil ich nicht weiß, was ich tun soll",
+          "Fehlende Routine",
+          "Mangelnde Unterstützung",
           "Alle oben genannten"
         ]
       },
       {
         "question": "Auf einer Skala von 0 bis 10, wie sehr möchten Sie das jetzt lösen?",
         "options": [
-          "0 bis 3 – Ich bin nicht bereit",
+          "0 bis 3 – Ich bin noch nicht bereit",
           "4 bis 6 – Ich suche nach Lösungen",
-          "7 bis 10 – Ich möchte das jetzt lösen!"
+          "7 bis 10 – Ich will das jetzt lösen!"
         ]
       },
       {
@@ -71,17 +71,17 @@
           {
             "icon": "👶",
             "title": "Verstehen Sie Ihr Baby",
-            "description": "Lernen Sie über die Schlafmuster und Signale Ihres Babys"
+            "description": "Lernen Sie die Schlafmuster und Signale Ihres Babys kennen"
           },
           {
             "icon": "🌙",
-            "title": "Wenden Sie an, was Sie lernen",
+            "title": "Wenden Sie das Gelernte an",
             "description": "Praktische und bewährte Techniken zur Verbesserung des Schlafs"
           },
           {
             "icon": "😴",
             "title": "Erreichen Sie ruhige Nächte",
-            "description": "Erhalten Sie den erholsamen Schlaf, den Sie und Ihr Baby verdienen"
+            "description": "Haben Sie den erholsamen Schlaf, den Sie und Ihr Baby verdienen"
           }
         ],
         "options": [
@@ -89,7 +89,24 @@
         ]
       },
       {
-        "question": "Können wir Ihnen eine einfache und erschwingliche Lösung zeigen, die bereits über 1.200 Müttern geholfen hat, in weniger als 7 Nächten besser zu schlafen?",
+        "question": "Mit welchen dieser Situationen hatten Sie seit der Geburt Ihres Babys die meisten Schwierigkeiten?",
+        "type": "checkbox-grid",
+        "instruction": "Wählen Sie alle zutreffenden aus.",
+        "options": [
+          "🏠 Eine organisierte Routine aufrechterhalten",
+          "😴 Gut schlafen",
+          "💤 Mit täglicher Müdigkeit umgehen",
+          "⏰ Zeit für mich selbst haben",
+          "🧹 Hausarbeiten erledigen",
+          "🍎 Sich um die Ernährung kümmern",
+          "✅ Das Gefühl haben, das Richtige zu tun",
+          "😰 Angst oder Stress kontrollieren",
+          "🤝 Ausreichend Unterstützung erhalten",
+          "📝 Anderes"
+        ]
+      },
+      {
+        "question": "Können wir Ihnen eine einfache und zugängliche Lösung zeigen, die bereits mehr als 1.200 Müttern geholfen hat, in weniger als 7 Nächten besser zu schlafen?",
         "options": [
           "Ja, bitte!",
           "Ich möchte verstehen, wie es funktioniert",
@@ -97,11 +114,30 @@
         ]
       },
       {
+        "question": "Wir sind hier, um Ihnen zu helfen",
+        "type": "persuasive",
+        "persuasive": {
+          "paragraphs": [
+            "Zum ersten Mal Mutter zu sein kann erschöpfend sein — besonders wenn Ihr Baby nicht schlafen will.",
+            "Es ist viel mehr als körperliche Müdigkeit. Schlechte Nächte beeinträchtigen Ihre Geduld, Ihre Routine, Ihre geistige Gesundheit und sogar Ihr Selbstwertgefühl.",
+            "Sie versuchen alles: Musik, Bäder, Halten, Windeln wechseln… und nichts funktioniert. Es scheint, als würde Ihr Baby einfach nicht schlafen wollen.",
+            "Aber die Wahrheit ist, es braucht nur die richtige Umgebung, eine angemessene Routine und emotionalen Komfort — alles auf sanfte und liebevolle Weise.",
+            "Ruhige Mama wurde geschaffen, um Sie Schritt für Schritt durch diesen Prozess zu führen. Es ist ein praktisches System, basierend auf Expertenberatung, damit Ihr Baby besser schläft — und Sie auch.",
+            "Keine endlosen Nächte mehr. Sie verdienen es zu ruhen.\nSie verdienen es, wieder Sie selbst zu sein."
+          ],
+          "signature": "Mit Liebe,\nExpertenteam\nRuhige Mama",
+          "button": "Weiter"
+        },
+        "options": [
+          "Weiter"
+        ]
+      },
+      {
         "question": "Über 7,3 Millionen Mütter haben das durchgemacht... Und Sie sind nicht allein.",
         "type": "testimonial",
         "testimonial": {
           "image": "/lovable-uploads/juliana.png",
-          "quote": "Ich konnte nicht mehr. Ich war erschöpft, schlief wochenlang nicht richtig. Mein Baby konnte nicht einschlafen und ich wollte nur weinen. Als ich Ruhige Mama entdeckte, änderte sich alles. Zum ersten Mal seit Monaten konnte ich mich hinlegen und friedlich schlafen, wissend, dass er auch ruhig war. Dieser Leitfaden gab mir meine geistige Gesundheit, meine Ruhe und meine Hoffnung zurück.",
+          "quote": "Ich konnte es nicht mehr ertragen. Ich war erschöpft, schlief wochenlang nicht richtig. Mein Baby konnte nicht einschlafen und ich wollte nur weinen. Als ich Ruhige Mama entdeckte, änderte sich alles. Zum ersten Mal seit Monaten konnte ich mich hinlegen und friedlich schlafen, wissend, dass er auch ruhig war. Dieser Leitfaden gab mir meine Vernunft, meine Ruhe und meine Hoffnung zurück.",
           "author": "— Juliana M., Erstmutter",
           "highlight": "7,3 Millionen Mütter"
         },
@@ -115,8 +151,8 @@
         "instruction": "Wählen Sie alle zutreffenden aus.",
         "options": [
           "Mein Baby schläft nur in meinen Armen",
-          "Wacht mehrmals in der Nacht auf",
-          "Weint viel ohne Grund",
+          "Wacht mehrmals nachts auf",
+          "Weint viel ohne ersichtlichen Grund",
           "Unregelmäßige Schlafroutine",
           "Ich fühle mich die ganze Zeit erschöpft",
           "Ich habe das Gefühl, alles falsch zu machen",
@@ -144,6 +180,46 @@
           "Mit organisierter Schlafroutine",
           "Alle oben genannten"
         ]
+      },
+      {
+        "question": "Ihre persönliche Zusammenfassung",
+        "type": "summary",
+        "summary": {
+          "title": "Ihr Schlafprofil",
+          "description": "Basierend auf Ihren Antworten haben wir Ihr Profil und die Hauptbereiche identifiziert, die verbessert werden können:",
+          "metrics": {
+            "sleep_quality": {
+              "label": "Schlafqualität",
+              "value": "NIEDRIG",
+              "color": "red",
+              "description": "Schlechte Nächte beeinträchtigen Ihr Wohlbefinden und Ihre Energie, sich um Ihr Baby zu kümmern."
+            },
+            "routine_organization": {
+              "label": "Routineorganisation",
+              "value": "IN ENTWICKLUNG",
+              "color": "orange",
+              "description": "Sie versuchen, eine Routine zu etablieren, benötigen aber noch fachkundige Anleitung."
+            },
+            "confidence_level": {
+              "label": "Mütterliches Selbstvertrauen",
+              "value": "MÄSSIG",
+              "color": "yellow",
+              "description": "Sie engagieren sich sehr, fühlen sich aber manchmal unsicher, ob Sie das Richtige tun."
+            }
+          },
+          "profile": {
+            "type": "Engagierte Mutter, die Lösungen sucht",
+            "characteristics": [
+              "Möchte das Beste für ihr Baby",
+              "Sucht bewährte Methoden",
+              "Braucht ruhigere Nächte",
+              "Möchte ihre Energie zurückgewinnen"
+            ]
+          }
+        },
+        "options": [
+          "Meine personalisierte Lösung ansehen"
+        ]
       }
     ],
     "finalResult": {
@@ -154,7 +230,7 @@
     "completion": {
       "title": "Glückwunsch! 🎉",
       "description": "Sie haben unser Quiz abgeschlossen! Jetzt können wir Ihnen eine personalisierte Lösung zeigen, um Ihre Nächte zu transformieren und den ruhigen Schlaf zu gewährleisten, den Sie und Ihr Baby verdienen.",
-      "button": "Ich möchte meine ruhigen Nächte ✨"
+      "button": "Ich will meine ruhigen Nächte ✨"
     },
     "loading": {
       "title": "Finalisierung...",
@@ -163,6 +239,15 @@
         "Identifizierung der besten Strategien für Sie...",
         "Personalisierung Ihres Plans für ruhige Nächte...",
         "Vorbereitung Ihrer exklusiven Anleitung..."
+      ]
+    },
+    "analysis": {
+      "title": "🔍 Analyse Ihrer Antworten...",
+      "steps": [
+        "Verarbeitung der Schlafmuster...",
+        "Identifizierung der Hauptherausforderungen...",
+        "Erstellung Ihres personalisierten Profils...",
+        "Abschluss der Analyse..."
       ]
     },
     "progress": {

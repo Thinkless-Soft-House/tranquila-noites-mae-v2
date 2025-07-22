@@ -89,6 +89,23 @@
         ]
       },
       {
+        "question": "Com quais dessas situações você mais tem dificuldade desde que seu bebê nasceu?",
+        "type": "checkbox-grid",
+        "instruction": "Selecione todas que se aplicam a você.",
+        "options": [
+          "🏠 Manter uma rotina organizada",
+          "😴 Dormir bem",
+          "💤 Lidar com o cansaço diário",
+          "⏰ Ter tempo para mim mesma",
+          "🧹 Fazer as tarefas da casa",
+          "🍎 Cuidar da alimentação",
+          "✅ Sentir que estou fazendo o certo",
+          "😰 Controlar a ansiedade ou o estresse",
+          "🤝 Receber apoio suficiente",
+          "📝 Outro"
+        ]
+      },
+      {
         "question": "Podemos te mostrar uma solução simples e acessível que já ajudou mais de 1.200 mães a dormir melhor em menos de 7 noites?",
         "options": [
           "Sim, por favor!",
@@ -97,7 +114,26 @@
         ]
       },
       {
-        "question": "Mais de 7,3 milhões de mães já passaram por isso... E você não está sozinha.",
+        "question": "Estamos aqui para te ajudar",
+        "type": "persuasive",
+        "persuasive": {
+          "paragraphs": [
+            "Ser mãe de primeira viagem pode ser exaustivo — especialmente quando seu bebê não dorme.",
+            "É muito mais do que cansaço físico. As noites mal dormidas afetam sua paciência, sua rotina, sua saúde mental e até sua autoestima.",
+            "Você tenta de tudo: músicas, banho, colo, troca de fralda… e nada funciona. Parece que seu bebê simplesmente não quer dormir.",
+            "Mas a verdade é que ele só precisa de um ambiente certo, de uma rotina adequada e de acolhimento emocional — tudo isso de forma leve e gentil.",
+            "O Mamãe Tranquila foi criado para te guiar passo a passo nesse processo. É um sistema prático, baseado em orientações de especialistas, para que seu bebê durma melhor — e você também.",
+            "Chega de noites intermináveis. Você merece descansar.\nVocê merece voltar a ser você."
+          ],
+          "signature": "Com carinho,\nEquipe de Especialistas\nMamãe Tranquila",
+          "button": "Continuar"
+        },
+        "options": [
+          "Continuar"
+        ]
+      },
+      {
+        "question": "Você não está sozinha nessa jornada",
         "type": "testimonial",
         "testimonial": {
           "image": "/lovable-uploads/juliana.png",
@@ -144,6 +180,46 @@
           "Com rotina de sono organizada",
           "Todas as anteriores"
         ]
+      },
+      {
+        "question": "Seu resumo personalizado",
+        "type": "summary",
+        "summary": {
+          "title": "Seu perfil de sono",
+          "description": "Com base nas suas respostas, identificamos seu perfil e as principais áreas que podem melhorar:",
+          "metrics": {
+            "sleep_quality": {
+              "label": "Qualidade do sono",
+              "value": "BAIXA",
+              "color": "red",
+              "description": "Noites mal dormidas estão afetando seu bem-estar e energia para cuidar do bebê."
+            },
+            "routine_organization": {
+              "label": "Organização da rotina",
+              "value": "EM DESENVOLVIMENTO",
+              "color": "orange",
+              "description": "Você está tentando estabelecer uma rotina, mas ainda precisa de orientação especializada."
+            },
+            "confidence_level": {
+              "label": "Confiança materna",
+              "value": "MODERADA",
+              "color": "yellow",
+              "description": "Você se dedica muito, mas às vezes se sente insegura sobre estar fazendo o certo."
+            }
+          },
+          "profile": {
+            "type": "Mãe Dedicada em Busca de Soluções",
+            "characteristics": [
+              "Quer o melhor para seu bebê",
+              "Busca métodos comprovados",
+              "Precisa de noites mais tranquilas",
+              "Deseja recuperar sua energia"
+            ]
+          }
+        },
+        "options": [
+          "Ver minha solução personalizada"
+        ]
       }
     ],
     "finalResult": {
@@ -163,6 +239,15 @@
         "Identificando as melhores estratégias para vocês...",
         "Personalizando seu plano de noites tranquilas...",
         "Preparando suas orientações exclusivas..."
+      ]
+    },
+    "analysis": {
+      "title": "🔍 Analisando suas respostas...",
+      "steps": [
+        "Processando padrões de sono...",
+        "Identificando principais desafios...",
+        "Criando seu perfil personalizado...",
+        "Finalizando análise..."
       ]
     },
     "progress": {

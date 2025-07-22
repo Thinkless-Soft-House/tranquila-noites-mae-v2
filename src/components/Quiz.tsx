@@ -10,6 +10,8 @@ const Quiz = () => {
   const [loadingProgress, setLoadingProgress] = useState(0);
   const [currentLoadingStep, setCurrentLoadingStep] = useState(0);
   const [showCompletion, setShowCompletion] = useState(false);
+  const [isAnalyzing, setIsAnalyzing] = useState(false);
+  const [analysisProgress, setAnalysisProgress] = useState(0);
   const { t, i18n } = useTranslation('quiz');
 
   const questions = t('quiz.questions', { returnObjects: true }) as Array<{
@@ -27,6 +29,27 @@ const Quiz = () => {
       quote: string;
       author: string;
       highlight: string;
+    };
+    persuasive?: {
+      paragraphs: string[];
+      signature: string;
+      button: string;
+    };
+    summary?: {
+      title: string;
+      description: string;
+      metrics: {
+        [key: string]: {
+          label: string;
+          value: string;
+          color: string;
+          description: string;
+        };
+      };
+      profile: {
+        type: string;
+        characteristics: string[];
+      };
     };
   }>;
 
@@ -48,6 +71,14 @@ const Quiz = () => {
         : [...current, answerIndex];
       setSelectedAnswers({ ...selectedAnswers, [currentStep]: newSelection });
       return; // Don't auto-advance for checkbox questions
+    } else if (currentQuestion?.type === 'checkbox-grid') {
+      // Handle multiple selection for grid layout
+      const current = (selectedAnswers[currentStep] as number[]) || [];
+      const newSelection = current.includes(answerIndex)
+        ? current.filter(i => i !== answerIndex)
+        : [...current, answerIndex];
+      setSelectedAnswers({ ...selectedAnswers, [currentStep]: newSelection });
+      return; // Don't auto-advance for checkbox-grid questions
     } else {
       // Handle single selection
       setSelectedAnswers({ ...selectedAnswers, [currentStep]: answerIndex });
@@ -70,6 +101,17 @@ const Quiz = () => {
     if (selectedCount === 0) return;
     
     setIsTransitioning(true);
+    
+    // Check if next question is the summary - start analysis loading
+    const nextQuestion = questions[currentStep + 1];
+    if (nextQuestion?.type === 'summary') {
+      setTimeout(() => {
+        setIsTransitioning(false);
+        startAnalysis();
+      }, 300);
+      return;
+    }
+    
     setTimeout(() => {
       if (currentStep < totalSteps - 1) {
         setCurrentStep(currentStep + 1);
@@ -94,11 +136,70 @@ const Quiz = () => {
 
   const getCheckoutUrl = () => {
     const lang = i18n.language.split('-')[0]; // Remove region code if present
-    return `/checkout?lang=${lang}`;
+    
+    // Check if we're in development mode
+    const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    
+    if (isDevelopment) {
+      // For testing in localhost - just show an alert and return a test URL
+      return `#checkout-${lang}`;
+    }
+    
+    const checkoutUrls = {
+      'pt': 'https://pay.kirvano.com/723dbad7-ba44-4223-acc9-a874956fc05b',
+      'es': 'https://pay.hotmart.com/H100347979Y',
+      'fr': 'https://pay.hotmart.com/B100347189Q',
+      'it': 'https://pay.hotmart.com/X100347508U',
+      'de': 'https://pay.hotmart.com/L100338792M',
+      'en': 'https://pay.hotmart.com/Q100315324A'
+    };
+    
+    return checkoutUrls[lang] || checkoutUrls['pt']; // Fallback para português
   };
 
   const handleFinalButton = () => {
-    window.location.href = getCheckoutUrl();
+    const checkoutUrl = getCheckoutUrl();
+    const lang = i18n.language.split('-')[0];
+    const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    
+    if (isDevelopment) {
+      // Show alert for testing in localhost
+      alert(`🚀 TESTE NO LOCALHOST\n\nEm produção, o usuário seria redirecionado para:\n\nIdioma: ${lang.toUpperCase()}\nURL: ${
+        lang === 'pt' ? 'https://pay.kirvano.com/723dbad7-ba44-4223-acc9-a874956fc05b' :
+        lang === 'es' ? 'https://pay.hotmart.com/H100347979Y' :
+        lang === 'fr' ? 'https://pay.hotmart.com/B100347189Q' :
+        lang === 'it' ? 'https://pay.hotmart.com/X100347508U' :
+        lang === 'de' ? 'https://pay.hotmart.com/L100338792M' :
+        'https://pay.hotmart.com/Q100315324A'
+      }\n\n✅ Quiz funcionando perfeitamente!`);
+      return;
+    }
+    
+    window.location.href = checkoutUrl;
+  };
+
+  // Analysis loading logic
+  const startAnalysis = () => {
+    setIsAnalyzing(true);
+    setAnalysisProgress(0);
+    
+    const analysisDuration = 3000; // 3 seconds
+    const progressInterval = 50; // Update every 50ms
+    
+    let currentProgress = 0;
+    
+    const interval = setInterval(() => {
+      currentProgress += (100 / (analysisDuration / progressInterval));
+      setAnalysisProgress(Math.min(currentProgress, 100));
+      
+      if (currentProgress >= 100) {
+        clearInterval(interval);
+        setTimeout(() => {
+          setIsAnalyzing(false);
+          setCurrentStep(currentStep + 1);
+        }, 500);
+      }
+    }, progressInterval);
   };
 
   // Loading logic
@@ -136,6 +237,130 @@ const Quiz = () => {
       }
     }, progressInterval);
   };
+
+  // Analysis loading screen
+  if (isAnalyzing) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50 flex items-center justify-center p-4">
+        <div className="max-w-2xl mx-auto text-center">
+          <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+            {/* Circular Progress */}
+            <div className="relative w-32 h-32 mx-auto mb-8">
+              <svg className="w-32 h-32 transform -rotate-90" viewBox="0 0 100 100">
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="40"
+                  stroke="#e5e7eb"
+                  strokeWidth="8"
+                  fill="none"
+                />
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="40"
+                  stroke="url(#analysisGradient)"
+                  strokeWidth="8"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeDasharray={`${2 * Math.PI * 40}`}
+                  strokeDashoffset={`${2 * Math.PI * 40 * (1 - analysisProgress / 100)}`}
+                  className="transition-all duration-300 ease-out"
+                />
+                <defs>
+                  <linearGradient id="analysisGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="#8b5cf6" />
+                    <stop offset="100%" stopColor="#ec4899" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="text-2xl font-bold text-purple-600">
+                  {Math.round(analysisProgress)}%
+                </span>
+              </div>
+            </div>
+
+            {/* Title */}
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+              {t('quiz.analysis.title')}
+            </h2>
+
+            {/* Analysis Steps */}
+            <div className="space-y-4">
+              <div className={`flex items-center justify-center space-x-3 transition-all duration-500 ${
+                analysisProgress >= 25 ? 'text-purple-600 opacity-100' : 'text-gray-400 opacity-60'
+              }`}>
+                <div className={`w-6 h-6 rounded-full flex items-center justify-center transition-all duration-300 ${
+                  analysisProgress >= 25 ? 'bg-purple-500 text-white' : 'bg-gray-200'
+                }`}>
+                  {analysisProgress >= 25 ? (
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  ) : (
+                    <div className="w-2 h-2 rounded-full bg-gray-400" />
+                  )}
+                </div>
+                <span className="font-medium">{(t('quiz.analysis.steps', { returnObjects: true }) as string[])[0]}</span>
+              </div>
+              
+              <div className={`flex items-center justify-center space-x-3 transition-all duration-500 ${
+                analysisProgress >= 50 ? 'text-purple-600 opacity-100' : 'text-gray-400 opacity-60'
+              }`}>
+                <div className={`w-6 h-6 rounded-full flex items-center justify-center transition-all duration-300 ${
+                  analysisProgress >= 50 ? 'bg-purple-500 text-white' : 'bg-gray-200'
+                }`}>
+                  {analysisProgress >= 50 ? (
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  ) : (
+                    <div className="w-2 h-2 rounded-full bg-gray-400" />
+                  )}
+                </div>
+                <span className="font-medium">{(t('quiz.analysis.steps', { returnObjects: true }) as string[])[1]}</span>
+              </div>
+              
+              <div className={`flex items-center justify-center space-x-3 transition-all duration-500 ${
+                analysisProgress >= 75 ? 'text-purple-600 opacity-100' : 'text-gray-400 opacity-60'
+              }`}>
+                <div className={`w-6 h-6 rounded-full flex items-center justify-center transition-all duration-300 ${
+                  analysisProgress >= 75 ? 'bg-purple-500 text-white' : 'bg-gray-200'
+                }`}>
+                  {analysisProgress >= 75 ? (
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  ) : (
+                    <div className="w-2 h-2 rounded-full bg-gray-400" />
+                  )}
+                </div>
+                <span className="font-medium">{(t('quiz.analysis.steps', { returnObjects: true }) as string[])[2]}</span>
+              </div>
+              
+              <div className={`flex items-center justify-center space-x-3 transition-all duration-500 ${
+                analysisProgress >= 100 ? 'text-purple-600 opacity-100' : 'text-gray-400 opacity-60'
+              }`}>
+                <div className={`w-6 h-6 rounded-full flex items-center justify-center transition-all duration-300 ${
+                  analysisProgress >= 100 ? 'bg-purple-500 text-white' : 'bg-gray-200'
+                }`}>
+                  {analysisProgress >= 100 ? (
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  ) : (
+                    <div className="w-2 h-2 rounded-full bg-gray-400" />
+                  )}
+                </div>
+                <span className="font-medium">{(t('quiz.analysis.steps', { returnObjects: true }) as string[])[3]}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   // Loading screen
   if (isLoading) {
@@ -361,7 +586,7 @@ const Quiz = () => {
             </p>
           )}
 
-          <div className={`space-y-4 ${currentQuestion?.type === 'gender' ? 'grid grid-cols-1 md:grid-cols-2 gap-6 space-y-0' : ''}`}>
+          <div className={`space-y-4 ${currentQuestion?.type === 'gender' ? 'grid grid-cols-1 md:grid-cols-2 gap-6 space-y-0 items-center' : ''}`}>
             {currentQuestion?.type === 'testimonial' ? (
               <div className="space-y-8">
                 {/* Testimonial Display */}
@@ -458,6 +683,286 @@ const Quiz = () => {
                     onClick={() => handleAnswerClick(0)}
                     disabled={isTransitioning}
                     className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-12 rounded-xl text-lg md:text-xl transition-all duration-300 transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {currentQuestion.options[0]}
+                  </button>
+                </div>
+              </div>
+            ) : currentQuestion?.type === 'persuasive' ? (
+              <div className="space-y-8">
+                {/* Persuasive Content Display */}
+                <div className="bg-gradient-to-br from-teal-50 to-green-50 rounded-3xl p-8 md:p-12 border border-teal-100 relative overflow-hidden">
+                  {/* Decorative illustration area */}
+                  <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-12">
+                    {/* Left side - Illustration */}
+                    <div className="flex-shrink-0 lg:w-1/3">
+                      <div className="relative">
+                        {/* Abstract illustration representing support and organization */}
+                        <div className="w-64 h-64 mx-auto relative">
+                          {/* Background elements */}
+                          <div className="absolute inset-0 bg-gradient-to-br from-teal-100 to-green-100 rounded-3xl transform rotate-3"></div>
+                          <div className="absolute inset-4 bg-white rounded-2xl shadow-lg border border-teal-200/50"></div>
+                          
+                          {/* Central elements */}
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="text-center space-y-4">
+                              {/* Checkmark list */}
+                              <div className="bg-teal-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                </svg>
+                              </div>
+                              
+                              {/* Abstract data/progress elements */}
+                              <div className="space-y-2">
+                                <div className="h-2 bg-teal-200 rounded-full"></div>
+                                <div className="h-2 bg-teal-300 rounded-full w-4/5"></div>
+                                <div className="h-2 bg-teal-400 rounded-full w-3/5"></div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          {/* Floating elements */}
+                          <div className="absolute top-4 right-4 w-8 h-8 bg-green-200 rounded-full opacity-60"></div>
+                          <div className="absolute bottom-8 left-6 w-6 h-6 bg-teal-300 rounded-full opacity-40"></div>
+                          <div className="absolute top-1/2 right-2 w-4 h-4 bg-green-400 rounded-full opacity-50"></div>
+                          
+                          {/* Clock icon in corner */}
+                          <div className="absolute top-6 left-6 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center border border-teal-200">
+                            <svg className="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <polyline points="12,6 12,12 16,14"></polyline>
+                            </svg>
+                          </div>
+                          
+                          {/* Chart elements */}
+                          <div className="absolute bottom-6 right-8 space-y-1">
+                            <div className="flex items-end space-x-1">
+                              <div className="w-2 h-6 bg-teal-300 rounded-sm"></div>
+                              <div className="w-2 h-8 bg-teal-400 rounded-sm"></div>
+                              <div className="w-2 h-10 bg-teal-500 rounded-sm"></div>
+                              <div className="w-2 h-7 bg-green-400 rounded-sm"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Right side - Content */}
+                    <div className="flex-1 lg:w-2/3">
+                      {/* Persuasive paragraphs */}
+                      <div className="space-y-6 text-gray-700">
+                        {currentQuestion.persuasive?.paragraphs.map((paragraph, index) => (
+                          <p key={index} className="text-base md:text-lg leading-relaxed">
+                            {paragraph.split(' ').map((word, wordIndex) => {
+                              // Highlight key terms
+                              const keyTerms = ['exaustivo', 'cansaço físico', 'noites mal dormidas', 'paciência', 'saúde mental', 'autoestima', 'ambiente certo', 'rotina adequada', 'acolhimento emocional', 'Mamãe Tranquila', 'sistema prático', 'especialistas', 'noites intermináveis', 'descansar'];
+                              const isKeyTerm = keyTerms.some(term => word.toLowerCase().includes(term.toLowerCase()));
+                              
+                              return (
+                                <span key={wordIndex} className={isKeyTerm ? 'font-semibold text-gray-900' : ''}>
+                                  {word}{wordIndex < paragraph.split(' ').length - 1 ? ' ' : ''}
+                                </span>
+                              );
+                            })}
+                          </p>
+                        ))}
+                      </div>
+                      
+                      {/* Signature */}
+                      <div className="mt-8 pt-6 border-t border-teal-200">
+                        <p className="text-sm font-medium text-teal-700 whitespace-pre-line">
+                          {currentQuestion.persuasive?.signature}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Decorative background elements */}
+                  <div className="absolute top-8 right-8 w-24 h-24 bg-teal-200/20 rounded-full blur-2xl"></div>
+                  <div className="absolute bottom-8 left-8 w-32 h-32 bg-green-200/20 rounded-full blur-3xl"></div>
+                </div>
+                
+                {/* Continue Button */}
+                <div className="text-center pt-4">
+                  <button
+                    onClick={() => handleAnswerClick(0)}
+                    disabled={isTransitioning}
+                    className="bg-gradient-to-r from-teal-500 to-green-500 hover:from-teal-600 hover:to-green-600 text-white font-bold py-4 px-12 rounded-xl text-lg md:text-xl transition-all duration-300 transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {currentQuestion.persuasive?.button || currentQuestion.options[0]}
+                  </button>
+                </div>
+              </div>
+            ) : currentQuestion?.type === 'checkbox-grid' ? (
+              <div className="space-y-8">
+                {/* Grid Layout for Checkbox Options */}
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                  {currentQuestion.options.map((option, index) => {
+                    const isSelected = ((selectedAnswers[currentStep] as number[]) || []).includes(index);
+                    
+                    // Extract emoji and text
+                    const parts = option.split(' ');
+                    const emoji = parts[0];
+                    const text = parts.slice(1).join(' ');
+                    
+                    return (
+                      <button
+                        key={index}
+                        onClick={() => handleAnswerClick(index)}
+                        disabled={isTransitioning}
+                        className={`group relative p-6 rounded-2xl border-2 transition-all duration-300 transform hover:scale-105 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed ${
+                          isSelected 
+                            ? 'bg-gradient-to-br from-purple-50 to-pink-50 border-purple-400 shadow-lg' 
+                            : 'bg-gray-50 hover:bg-gray-100 border-gray-200 hover:border-purple-300'
+                        }`}
+                      >
+                        {/* Selection indicator */}
+                        <div className={`absolute top-3 right-3 w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all duration-300 ${
+                          isSelected 
+                            ? 'bg-gradient-to-r from-purple-500 to-pink-500 border-purple-500' 
+                            : 'border-gray-300 group-hover:border-purple-400'
+                        }`}>
+                          {isSelected && (
+                            <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            </svg>
+                          )}
+                        </div>
+                        
+                        {/* Content */}
+                        <div className="text-center space-y-3">
+                          <div className="text-3xl md:text-4xl">
+                            {emoji}
+                          </div>
+                          <div className={`text-sm md:text-base font-medium leading-tight transition-colors duration-300 ${
+                            isSelected ? 'text-purple-700' : 'text-gray-700 group-hover:text-purple-600'
+                          }`}>
+                            {text}
+                          </div>
+                        </div>
+                        
+                        {/* Hover effect */}
+                        <div className={`absolute inset-0 rounded-2xl transition-all duration-300 ${
+                          isSelected 
+                            ? 'bg-gradient-to-br from-purple-100/20 to-pink-100/20' 
+                            : 'bg-transparent group-hover:bg-purple-50/30'
+                        }`} />
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            ) : currentQuestion?.type === 'summary' ? (
+              <div className="space-y-8">
+                {/* Personal Summary Display */}
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 md:p-12 border border-blue-100">
+                  {/* Header */}
+                  <div className="text-center mb-8">
+                    <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+                      {currentQuestion.summary?.title}
+                    </h3>
+                    <p className="text-lg text-gray-600">
+                      {currentQuestion.summary?.description}
+                    </p>
+                  </div>
+
+                  {/* Metrics Section */}
+                  <div className="space-y-6 mb-8">
+                    {Object.entries(currentQuestion.summary?.metrics || {}).map(([key, metric]) => {
+                      const getColorClasses = (color: string) => {
+                        switch (color) {
+                          case 'red':
+                            return {
+                              bg: 'bg-red-50',
+                              border: 'border-red-200',
+                              text: 'text-red-700',
+                              badge: 'bg-red-100 text-red-800'
+                            };
+                          case 'orange':
+                            return {
+                              bg: 'bg-orange-50',
+                              border: 'border-orange-200',
+                              text: 'text-orange-700',
+                              badge: 'bg-orange-100 text-orange-800'
+                            };
+                          case 'yellow':
+                            return {
+                              bg: 'bg-yellow-50',
+                              border: 'border-yellow-200',
+                              text: 'text-yellow-700',
+                              badge: 'bg-yellow-100 text-yellow-800'
+                            };
+                          default:
+                            return {
+                              bg: 'bg-gray-50',
+                              border: 'border-gray-200',
+                              text: 'text-gray-700',
+                              badge: 'bg-gray-100 text-gray-800'
+                            };
+                        }
+                      };
+
+                      const colors = getColorClasses(metric.color);
+
+                      return (
+                        <div key={key} className={`${colors.bg} ${colors.border} border-2 rounded-2xl p-6`}>
+                          <div className="flex items-center justify-between mb-4">
+                            <h4 className="text-lg font-semibold text-gray-800">
+                              {metric.label}
+                            </h4>
+                            <span className={`${colors.badge} px-3 py-1 rounded-full text-sm font-medium`}>
+                              {metric.value}
+                            </span>
+                          </div>
+                          <p className={`${colors.text} text-sm md:text-base`}>
+                            {metric.description}
+                          </p>
+                        </div>
+                      );
+                    })}
+                  </div>
+
+                  {/* Profile Section */}
+                  <div className="bg-white rounded-2xl p-6 border-2 border-blue-200">
+                    <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
+                      {/* Profile Image */}
+                      <div className="flex-shrink-0">
+                        <div className="w-32 h-32 rounded-2xl overflow-hidden bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center">
+                          <img 
+                            src="/lovable-uploads/mae.webp" 
+                            alt="Mãe dedicada"
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      </div>
+                      
+                      {/* Profile Info */}
+                      <div className="flex-1 text-center md:text-left">
+                        <h4 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+                          Seu perfil: {currentQuestion.summary?.profile.type}
+                        </h4>
+                        <div className="space-y-3">
+                          {currentQuestion.summary?.profile.characteristics.map((characteristic, index) => (
+                            <div key={index} className="flex items-center justify-center md:justify-start space-x-3">
+                              <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0"></div>
+                              <span className="text-gray-700 text-sm md:text-base">
+                                {characteristic}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Continue Button */}
+                <div className="text-center pt-4">
+                  <button
+                    onClick={() => handleAnswerClick(0)}
+                    disabled={isTransitioning}
+                    className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold py-4 px-12 rounded-xl text-lg md:text-xl transition-all duration-300 transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {currentQuestion.options[0]}
                   </button>
@@ -571,7 +1076,7 @@ const Quiz = () => {
             )}
           </div>
 
-          {currentQuestion?.type === 'checkbox' && (
+          {(currentQuestion?.type === 'checkbox' || currentQuestion?.type === 'checkbox-grid') && (
             <div className="mt-6 text-center">
               <button
                 onClick={handleNextFromCheckbox}

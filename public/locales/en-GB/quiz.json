@@ -40,7 +40,7 @@
         "question": "Which situation best describes your nighttime routine?",
         "options": [
           "My baby sleeps in my arms and wakes up if I try to put them in the crib",
-          "They cry a lot and only sleep whilst nursing",
+          "They cry a lot and only sleep while nursing",
           "I need to soothe for a long time until they fall asleep",
           "They sleep alone, but wake up during the night",
           "I'm looking for a more peaceful routine"
@@ -50,7 +50,7 @@
         "question": "What is your biggest difficulty right now?",
         "options": [
           "Lack of sleep and exhaustion",
-          "Anxiety from not knowing what to do",
+          "Anxiety for not knowing what to do",
           "Lack of routine",
           "Lack of support",
           "All of the above"
@@ -65,7 +65,7 @@
         ]
       },
       {
-        "question": "Our programme will help you build habits for peaceful nights",
+        "question": "Our program will help you create habits for peaceful nights",
         "type": "benefits",
         "benefits": [
           {
@@ -81,7 +81,7 @@
           {
             "icon": "😴",
             "title": "Achieve peaceful nights",
-            "description": "Get the restful sleep you and your baby deserve"
+            "description": "Have the restorative sleep you and your baby deserve"
           }
         ],
         "options": [
@@ -89,7 +89,24 @@
         ]
       },
       {
-        "question": "Can we show you a simple and affordable solution that has already helped over 1,200 mothers sleep better in less than 7 nights?",
+        "question": "Which of these situations have you struggled with most since your baby was born?",
+        "type": "checkbox-grid",
+        "instruction": "Select all that apply to you.",
+        "options": [
+          "🏠 Maintaining an organized routine",
+          "😴 Sleeping well",
+          "💤 Dealing with daily fatigue",
+          "⏰ Having time for myself",
+          "🧹 Doing household chores",
+          "🍎 Taking care of nutrition",
+          "✅ Feeling like I'm doing the right thing",
+          "😰 Controlling anxiety or stress",
+          "🤝 Getting enough support",
+          "📝 Other"
+        ]
+      },
+      {
+        "question": "Can we show you a simple and accessible solution that has already helped more than 1,200 mothers sleep better in less than 7 nights?",
         "options": [
           "Yes, please!",
           "I want to understand how it works",
@@ -97,12 +114,31 @@
         ]
       },
       {
+        "question": "We are here to help you",
+        "type": "persuasive",
+        "persuasive": {
+          "paragraphs": [
+            "Being a first-time mom can be exhausting — especially when your baby won't sleep.",
+            "It's much more than physical fatigue. Poor nights affect your patience, your routine, your mental health and even your self-esteem.",
+            "You try everything: music, baths, holding, diaper changes… and nothing works. It seems like your baby simply doesn't want to sleep.",
+            "But the truth is they just need the right environment, an adequate routine and emotional comfort — all in a gentle and loving way.",
+            "Peaceful Mom was created to guide you step by step through this process. It's a practical system, based on expert guidance, so your baby sleeps better — and you do too.",
+            "No more endless nights. You deserve to rest.\nYou deserve to be yourself again."
+          ],
+          "signature": "With love,\nExpert Team\nPeaceful Mom",
+          "button": "Continue"
+        },
+        "options": [
+          "Continue"
+        ]
+      },
+      {
         "question": "Over 7.3 million mothers have been through this... And you are not alone.",
         "type": "testimonial",
         "testimonial": {
           "image": "/lovable-uploads/juliana.png",
-          "quote": "I couldn't take it anymore. I was exhausted, not sleeping properly for weeks. My baby couldn't fall asleep and I just wanted to cry. When I discovered Peaceful Mum, everything changed. For the first time in months, I was able to lie down and sleep peacefully knowing he was also calm. This guide gave me back my sanity, my rest and my hope.",
-          "author": "— Juliana M., first-time mum",
+          "quote": "I couldn't take it anymore. I was exhausted, not sleeping properly for weeks. My baby couldn't fall asleep and I just wanted to cry. When I discovered Peaceful Mom, everything changed. For the first time in months, I was able to lie down and sleep peacefully knowing he was also calm. This guide gave me back my sanity, my rest and my hope.",
+          "author": "— Juliana M., first-time mom",
           "highlight": "7.3 million mothers"
         },
         "options": [
@@ -127,7 +163,7 @@
         "question": "How would you rate the quality of your sleep in recent weeks?",
         "type": "scale",
         "options": [
-          "I slept very poorly",
+          "I slept very badly",
           "I wake up several times and wake up tired",
           "I sleep well sometimes",
           "My sleep is stable, but could be better",
@@ -140,9 +176,49 @@
         "options": [
           "Sleeping 6 hours straight",
           "With more energy during the day",
-          "More calm with my baby",
-          "With organised sleep routine",
+          "More peaceful with my baby",
+          "With organized sleep routine",
           "All of the above"
+        ]
+      },
+      {
+        "question": "Your personalized summary",
+        "type": "summary",
+        "summary": {
+          "title": "Your sleep profile",
+          "description": "Based on your answers, we identified your profile and the main areas that can improve:",
+          "metrics": {
+            "sleep_quality": {
+              "label": "Sleep quality",
+              "value": "LOW",
+              "color": "red",
+              "description": "Poor nights are affecting your well-being and energy to care for your baby."
+            },
+            "routine_organization": {
+              "label": "Routine organization",
+              "value": "DEVELOPING",
+              "color": "orange",
+              "description": "You're trying to establish a routine, but still need expert guidance."
+            },
+            "confidence_level": {
+              "label": "Maternal confidence",
+              "value": "MODERATE",
+              "color": "yellow",
+              "description": "You dedicate yourself a lot, but sometimes feel insecure about doing the right thing."
+            }
+          },
+          "profile": {
+            "type": "Dedicated Mom Seeking Solutions",
+            "characteristics": [
+              "Wants the best for her baby",
+              "Seeks proven methods",
+              "Needs more peaceful nights",
+              "Wants to recover her energy"
+            ]
+          }
+        },
+        "options": [
+          "See my personalized solution"
         ]
       }
     ],
@@ -153,7 +229,7 @@
     },
     "completion": {
       "title": "Congratulations! 🎉",
-      "description": "You completed our quiz! Now we can show you a personalised solution to transform your nights and ensure the peaceful sleep you and your baby deserve.",
+      "description": "You completed our quiz! Now we can show you a personalized solution to transform your nights and ensure the peaceful sleep you and your baby deserve.",
       "button": "I want my peaceful nights ✨"
     },
     "loading": {
@@ -163,6 +239,15 @@
         "Identifying the best strategies for you...",
         "Personalising your peaceful nights plan...",
         "Preparing your exclusive guidance..."
+      ]
+    },
+    "analysis": {
+      "title": "🔍 Analysing your answers...",
+      "steps": [
+        "Processing sleep patterns...",
+        "Identifying main challenges...",
+        "Creating your personalised profile...",
+        "Finalising analysis..."
       ]
     },
     "progress": {
