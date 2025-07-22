@@ -9,6 +9,7 @@ const Quiz = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [loadingProgress, setLoadingProgress] = useState(0);
   const [currentLoadingStep, setCurrentLoadingStep] = useState(0);
+  const [showCompletion, setShowCompletion] = useState(false);
   const { t, i18n } = useTranslation('quiz');
 
   const questions = t('quiz.questions', { returnObjects: true }) as Array<{
@@ -107,7 +108,6 @@ const Quiz = () => {
     setCurrentLoadingStep(0);
     
     const loadingSteps = t('quiz.loading.steps', { returnObjects: true }) as string[];
-    const totalSteps = loadingSteps.length;
     const stepDuration = 4000; // 4 seconds total
     const progressInterval = 50; // Update every 50ms
     
@@ -118,8 +118,8 @@ const Quiz = () => {
       currentProgress += (100 / (stepDuration / progressInterval));
       
       // Update current step based on progress
-      const newStepIndex = Math.floor((currentProgress / 100) * totalSteps);
-      if (newStepIndex !== currentStepIndex && newStepIndex < totalSteps) {
+      const newStepIndex = Math.floor((currentProgress / 100) * loadingSteps.length);
+      if (newStepIndex !== currentStepIndex && newStepIndex < loadingSteps.length) {
         setCurrentLoadingStep(newStepIndex);
         currentStepIndex = newStepIndex;
       }
@@ -130,7 +130,8 @@ const Quiz = () => {
         clearInterval(interval);
         setTimeout(() => {
           setIsLoading(false);
-          setCurrentStep(totalSteps); // Go to completion
+          setShowCompletion(true); // Exibe a tela de conclusão do quiz
+          setCurrentStep(totalSteps); // Garante que está na etapa de conclusão
         }, 500);
       }
     }, progressInterval);
@@ -225,8 +226,8 @@ const Quiz = () => {
     );
   }
 
-  // Original completion message
-  if (currentStep === totalSteps) {
+  // Show completion message
+  if (showCompletion && currentStep >= totalSteps) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50 flex items-center justify-center p-4">
         <div className={`max-w-2xl mx-auto text-center transform transition-all duration-500 ${
@@ -251,6 +252,7 @@ const Quiz = () => {
               onClick={() => {
                 setIsTransitioning(true);
                 setTimeout(() => {
+                  setShowCompletion(false);
                   setCurrentStep(totalSteps + 1);
                   setIsTransitioning(false);
                 }, 300);
@@ -266,7 +268,7 @@ const Quiz = () => {
   }
 
   // Final result - new personalized result
-  if (currentStep > totalSteps) {
+  if (currentStep > totalSteps || (!showCompletion && currentStep >= totalSteps)) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50 flex items-center justify-center p-4">
         <div className={`max-w-2xl mx-auto text-center transform transition-all duration-500 ${
@@ -300,6 +302,12 @@ const Quiz = () => {
   }
 
   const currentQuestion = questions[currentStep];
+  
+  // If we don't have a current question, we shouldn't render the quiz
+  if (!currentQuestion) {
+    return null;
+  }
+  
   const progress = ((currentStep + 1) / totalSteps) * 100;
 
   return (
